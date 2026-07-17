@@ -4,6 +4,7 @@ const navItems = [
   ["home", "Home", "/"],
   ["digital-twin", "Digital Twin & Interactive", "/digital-twin/"],
   ["3d-generalist", "3D Generalist", "/3d-generalist/"],
+  ["ui-ux", "UI/UX", "/ui-ux/"],
   ["research", "Research", "/research/"],
   ["about", "About & Résumé", "/about/"],
 ];
@@ -24,6 +25,72 @@ const projectVisual = (type, label, index = "01") => `
   </div>`;
 
 const tagList = (items) => `<ul class="tag-list">${items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
+
+const galleryImage = (src, alt, className = "") => `
+  <button class="gallery-image ${className}" type="button" data-full="${src}" data-alt="${alt}" aria-label="Open ${alt}">
+    <img src="${src}" alt="${alt}" loading="lazy" decoding="async">
+    <span>View full image ↗</span>
+  </button>`;
+
+const videoCard = (id, title, meta) => `
+  <article class="video-card reveal">
+    <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${title}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div><p class="project-kicker">${meta}</p><h3>${title}</h3></div>
+  </article>`;
+
+const threeDProjects = [
+  {
+    number: "01",
+    title: "Still-Life Look Development",
+    kicker: "LOOK DEVELOPMENT · RENDERING & SHADING",
+    description: "A complete scene study progressing from greyscale form and material development to rig lighting and final cinematic composition. Created as the final project for Rendering & Shading, taught by Caleb Kicklighter and Jeff Nichols.",
+    tags: ["Maya", "Look development", "Shading", "Lighting", "Composition"],
+    images: [
+      ["/assets/3d/01-lookdev-greyscale.webp", "Greyscale still-life scene with skull, lamp, violin, books, and drawing tools"],
+      ["/assets/3d/01-lookdev-vdev.webp", "Material-development and rig-lighting stage of the still-life scene"],
+      ["/assets/3d/01-lookdev-final.webp", "Final warmly lit composition of the still-life scene"],
+    ],
+  },
+  {
+    number: "02",
+    title: "Outdoor Messenger Bag",
+    kicker: "HARD-SURFACE · MODELING & TEXTURING",
+    description: "A production study focused on believable construction, layered fabric and leather materials, hardware details, topology, and presentation across multiple views.",
+    tags: ["Maya", "Substance 3D Painter", "Topology", "PBR texturing", "Asset presentation"],
+    images: [
+      ["/assets/3d/02-messenger-01.webp", "Outdoor messenger bag front material detail"],
+      ["/assets/3d/02-messenger-02.webp", "Outdoor messenger bag side pocket and hardware detail"],
+      ["/assets/3d/02-messenger-03.webp", "Outdoor messenger bag front view"],
+      ["/assets/3d/02-messenger-04.webp", "Outdoor messenger bag three-quarter view"],
+      ["/assets/3d/02-messenger-05.webp", "Outdoor messenger bag side view"],
+      ["/assets/3d/02-messenger-06.webp", "Outdoor messenger bag rear view"],
+    ],
+  },
+  {
+    number: "03",
+    title: "Vintage Coffee Grinder",
+    kicker: "HARD-SURFACE · MATERIAL STUDY",
+    description: "An aged mechanical prop exploring wood grain, worn metal, surface variation, and readable construction from hero and turnaround views.",
+    tags: ["Maya", "Substance 3D Painter", "Hard-surface", "Material definition"],
+    images: [
+      ["/assets/3d/03-grinder-01.webp", "Vintage coffee grinder reference and rendered comparison"],
+      ["/assets/3d/03-grinder-02.webp", "Vintage coffee grinder front three-quarter view"],
+      ["/assets/3d/03-grinder-03.webp", "Vintage coffee grinder wood and metal detail"],
+      ["/assets/3d/03-grinder-04.webp", "Vintage coffee grinder front view"],
+      ["/assets/3d/03-grinder-05.webp", "Vintage coffee grinder side view"],
+      ["/assets/3d/03-grinder-06.webp", "Vintage coffee grinder opposite side view"],
+      ["/assets/3d/03-grinder-07.webp", "Vintage coffee grinder rear view"],
+    ],
+  },
+];
+
+const assetStudies = [
+  ["04", "Duckbill Ground Clamp", "Realistic Maya and Substance 3D Painter asset created for a factory-safety AR game during my VRTech internship.", "/assets/3d/04-can-opener-01.webp", "/assets/3d/04-can-opener-02.webp"],
+  ["05", "Big-Headed Monk Mask / Dai Tou Fut", "Maya and Substance 3D Painter prop created for my research on AR in Guangdong lion dance.", "/assets/3d/05-mask-01.webp", "/assets/3d/05-mask-02.webp"],
+  ["06", "Lion Dance Drum (Da Shi Gu 大狮鼓)", "Realistic Maya and Substance 3D Painter cultural prop created for my capstone research.", "/assets/3d/06-drum-01.webp", "/assets/3d/06-drum-02.webp"],
+  ["07", "Gong and Mallet", "Realistic Maya and Substance 3D Painter cultural prop created for my capstone research.", "/assets/3d/07-gong-01.webp", "/assets/3d/07-gong-02.webp"],
+  ["08", "Lamppost", "Stylized environment prop created in 3ds Max for a 3D modeling class.", "/assets/3d/08-lantern-01.webp", "/assets/3d/08-lantern-02.webp"],
+];
 
 const header = () => `
   <header class="site-header">
@@ -110,8 +177,9 @@ const home = () => `
         ${[
           ["01", "Systems & Simulation", "Digital twins · real-time data · agent-based simulation · performance validation"],
           ["02", "Interactive & Spatial", "AR · Unity/C# · interaction design · photogrammetry · projection mapping"],
-          ["03", "3D Production", "Modeling · texturing · rigging · animation · environments · motion capture"],
-          ["04", "Research & Communication", "Experimental design · technical writing · teaching · visual analytics"],
+          ["03", "Interface & Experience", "Wireframes · interaction flows · automotive HMI · visual systems · prototyping"],
+          ["04", "3D Production", "Modeling · texturing · rigging · animation · environments · motion capture"],
+          ["05", "Research & Communication", "Experimental design · technical writing · teaching · visual analytics"],
         ].map(([num, title, text]) => `<article class="capability reveal"><span>${num}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}
       </div>
     </section>
@@ -135,8 +203,19 @@ const digitalTwin = () => `
       <div class="case-layout"><aside class="case-meta reveal"><p>ROLE</p><strong>Digital Design Intern</strong><p>ORGANIZATION</p><strong>ENDEAVR Institute</strong><p>YEAR</p><strong>2025</strong></aside><article class="case-copy reveal"><p class="eyebrow">CASE STUDY 02</p><h2>Connected mobility, from landscape to interface.</h2><p class="lead">An interactive prototype pairing geospatial context and crowd simulation with a three-mode in-vehicle UX concept.</p><p>I imported Google Earth data through Cesium, drew custom movement paths, and simulated crowds with Unreal Mass AI. In parallel, I translated technical requirements into wireframes for Self-driving, AI Training, and AI Driving modes, supported by a cohesive visual language.</p>${tagList(["Unreal Engine", "Cesium", "Mass AI", "UX/UI", "Crowd simulation"])}</article></div>
     </section>
     <section class="case-study compact" id="ar">
-      ${projectVisual("ar", "Augmented reality studies", "03")}
-      <div class="case-layout"><aside class="case-meta reveal"><p>FORMAT</p><strong>Three coded assignments</strong><p>FOCUS</p><strong>AR interaction & spatial storytelling</strong><p>MEDIA</p><strong>Video links coming soon</strong></aside><article class="case-copy reveal"><p class="eyebrow">PROJECT COLLECTION 03</p><h2>Augmented reality studies.</h2><p class="lead">A three-part Unity series investigating how digital content can respond to real-world space.</p><p>I programmed the experiences in C# using Unity. The third assignment extends the pipeline with objects captured through photogrammetry, combining asset acquisition, optimization, interaction, and presentation.</p>${tagList(["Unity", "C#", "AR", "Photogrammetry", "Spatial interaction"])}</article></div>
+      <div class="case-layout"><aside class="case-meta reveal"><p>FORMAT</p><strong>Three coded assignments</strong><p>FOCUS</p><strong>AR interaction & spatial storytelling</strong><p>MEDIA</p><strong>Three project films</strong></aside><article class="case-copy reveal"><p class="eyebrow">PROJECT COLLECTION 03</p><h2>Augmented reality studies.</h2><p class="lead">A three-part Unity series investigating how digital content can respond to real-world space.</p><p>I programmed the experiences in C# using Unity. The third assignment extends the pipeline with objects captured through photogrammetry, combining asset acquisition, optimization, interaction, and presentation.</p>${tagList(["Unity", "C#", "AR", "Photogrammetry", "Spatial interaction"])}</article></div>
+      <div class="project-video-grid">
+        ${videoCard("MfyWqeeUMc8", "3D AR Study 01", "UNITY · C# · AUGMENTED REALITY")}
+        ${videoCard("lXWZT_A-ezY", "3D AR Study 02", "UNITY · C# · AUGMENTED REALITY")}
+        ${videoCard("Nowm-IpWCnc", "3D AR Study 03", "UNITY · C# · PHOTOGRAMMETRY")}
+      </div>
+    </section>
+    <section class="section interactive-films">
+      <div class="section-heading reveal"><p class="eyebrow">04 / INTERACTIVE PROJECT FILMS</p><h2>Code-driven<br><em>worlds in motion.</em></h2></div>
+      <div class="project-video-grid">
+        ${videoCard("9jZooyXzVAA", "A Miraculous Jungle", "3D PROGRAMMING · HOUDINI · UNREAL ENGINE")}
+        ${videoCard("KQk7JzZaLH0", "SamSong", "2D & XR GAMING · INTERACTIVE DEVELOPMENT")}
+      </div>
     </section>
   </main>`;
 
@@ -144,11 +223,11 @@ const generalist = () => `
   <main>
     <section class="page-hero generalist-hero">
       <div class="reveal"><p class="eyebrow">SPECIALIST PORTFOLIO / DIRECT LINK</p><h1>3D<br><em>Generalist</em></h1></div>
-      <div class="page-hero-aside reveal"><p>Real-time-ready environments and assets, built with a full understanding of the 3D production pipeline.</p>${tagList(["Unreal Engine", "Maya", "Substance 3D Painter", "ZBrush", "Blender", "MotionBuilder"])}</div>
+      <div class="page-hero-aside reveal"><p>Real-time-ready environments and assets, built with a full understanding of look development, topology, optimization, and the 3D production pipeline.</p>${tagList(["Unreal Engine", "Maya", "Substance 3D Painter", "Hard-surface", "Look development", "Blueprints"])}</div>
     </section>
     <section class="reel-panel section">
-      <div class="reel-frame reveal"><div class="reel-title"><span>2026</span><strong>3D GENERALIST<br>SHOWREEL</strong><small>VIDEO PLACEHOLDER</small></div>${icons.play}</div>
-      <div class="reel-copy reveal"><p class="eyebrow">REEL BREAKDOWN</p><h2>Environment, asset,<br><em>and motion craft.</em></h2><p>This focused page leads with Unreal Engine, Maya, and Substance 3D Painter for 3D Generalist applications. Engineering and research remain accessible through the navigation without competing with the visual work.</p></div>
+      <div class="video-embed reveal"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PL1tX9HxUBcES6xAiVwDfSMVhmwTR33M7Z" title="Skylar La 3D and visualization project films" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <div class="reel-copy reveal"><p class="eyebrow">3D GENERALIST FILMS</p><h2>Environment, asset,<br><em>and motion craft.</em></h2><p>The playlist contains the remaining animation, layout, asset, and turntable films. Featured work includes <em>The Guangdong Lion Dance</em>, <em>Shell You Be Mine?</em>, <em>Arrogance vs. Accuracy</em>, <em>Arctic Appetite</em>, and <em>The Seal & The Orcas</em>.</p><a class="text-link" href="https://www.youtube.com/playlist?list=PL1tX9HxUBcES6xAiVwDfSMVhmwTR33M7Z" target="_blank" rel="noreferrer">Open full playlist <span>↗</span></a></div>
     </section>
     <section class="section production-pipeline">
       <div class="section-heading reveal"><p class="eyebrow">01 / PRODUCTION PIPELINE</p><h2>From blockout<br><em>to real time.</em></h2></div>
@@ -163,16 +242,44 @@ const generalist = () => `
       </div>
     </section>
     <section class="section gallery-section">
-      <div class="section-heading reveal"><p class="eyebrow">02 / SELECTED 3D WORK</p><h2>Gallery incoming.</h2></div>
-      <p class="section-intro reveal">Final stills and project films will be placed here after media selection. Each entry will show the visual result first, followed by role, tools, pipeline, and a concise breakdown.</p>
-      <div class="gallery-grid">${["ENVIRONMENT / UNREAL", "ASSET / MAYA + SUBSTANCE", "ANIMATION / MAYA", "PHOTOGRAMMETRY / REAL-TIME"].map((label, i) => `<div class="gallery-placeholder reveal"><span>0${i + 1}</span><strong>${label}</strong><small>MEDIA PLACEHOLDER</small></div>`).join("")}</div>
+      <div class="section-heading reveal"><p class="eyebrow">02 / SELECTED 3D WORK</p><h2>Modeling, materials,<br><em>and look development.</em></h2></div>
+      <div class="portfolio-projects">
+        ${threeDProjects.map((project) => `<article class="portfolio-project" id="project-${project.number}">
+          <header class="project-header reveal"><span>${project.number}</span><div><p class="project-kicker">${project.kicker}</p><h3>${project.title}</h3><p>${project.description}</p>${tagList(project.tags)}</div></header>
+          <div class="project-gallery project-gallery-${project.images.length}">${project.images.map(([src, alt], i) => galleryImage(src, alt, i === 0 ? "gallery-hero" : "")).join("")}</div>
+        </article>`).join("")}
+      </div>
+    </section>
+    <section class="section asset-studies">
+      <div class="section-heading reveal"><p class="eyebrow">03 / ASSET STUDIES</p><h2>Topology<br><em>to surface.</em></h2></div>
+      <div class="asset-study-grid">${assetStudies.map(([number, title, description, wireframe, surfaced]) => `<article class="asset-study reveal"><header><span>${number}</span><div><h3>${title}</h3><p>${description}</p></div></header><div>${galleryImage(wireframe, `${title} wireframe`)}${galleryImage(surfaced, `${title} surfaced render`)}</div></article>`).join("")}</div>
+    </section>
+    <dialog class="image-viewer" id="image-viewer"><button type="button" aria-label="Close full image">×</button><img alt=""><p></p></dialog>
+  </main>`;
+
+const uiUx = () => `
+  <main>
+    <section class="page-hero ui-hero">
+      <div class="reveal"><p class="eyebrow">INTERFACE PRACTICE / 03</p><h1>UI<br><em>& UX</em></h1></div>
+      <div class="page-hero-aside reveal"><p>I organize complex interactions into clear flows, wireframes, and visual systems for mobility, care, and hospitality experiences.</p>${tagList(["Wireframing", "Interaction flows", "Automotive HMI", "Prototyping", "Visual design"])}</div>
+    </section>
+    <section class="section ui-case-featured" id="automotive">
+      <div class="ui-placeholder reveal"><span>AUTOMOTIVE HMI</span><strong>WIREFRAME<br>ARCHIVE</strong><small>PROJECT SCREENS TO BE ADDED</small></div>
+      <article class="ui-case-copy reveal"><p class="eyebrow">01 / ENDEAVR INSTITUTE · 2025</p><h2>WeDrive: three-mode in-vehicle interface.</h2><p class="lead">A wireframe system translating technical documentation into approachable flows for Self-driving, AI Training, and AI Driving modes.</p><p>I mapped the product logic, organized information across three operating states, and established a cohesive visual direction. The UI work accompanied an Unreal Engine mobility prototype using Cesium and Mass AI, giving me experience across both interface and 3D implementation contexts.</p>${tagList(["Automotive HMI", "Wireframes", "Information architecture", "UX/UI", "Unreal Engine context"])}<a class="button button-primary" href="https://www.figma.com/proto/fnip6iH4PDqzlVgrygsrmi/WeDrive?page-id=129%3A989&node-id=129-990&p=f&viewport=711%2C133%2C0.06&t=MB5LuE9SWEGzhRQg-1&scaling=contain&content-scaling=fixed" target="_blank" rel="noreferrer">View WeDrive prototype ${icons.arrow}</a></article>
+    </section>
+    <section class="section ui-archive">
+      <div class="section-heading reveal"><p class="eyebrow">02 / ARENA MULTIMEDIA</p><h2>Interface<br><em>case archive.</em></h2></div>
+      <div class="ui-project-grid">
+        <article class="ui-project reveal" id="icare"><div class="ui-placeholder icare-visual"><span>02 / CARE EXPERIENCE</span><strong>iCARE</strong><small>MOBILE UI · BRAND SYSTEM · CODED WEBSITE</small></div><div class="ui-project-copy"><p class="project-kicker">ARENA MULTIMEDIA · TEAM PROJECT</p><h3>iCare healthcare experience</h3><p>A healthcare experience developed across mobile UI/UX, brand direction, and a responsive coded website. The prototype begins with a bright blue onboarding system and extends into a complete iCare visual identity.</p><dl class="project-facts"><div><dt>Role</dt><dd>Project lead · UI/UX designer · Web coder</dd></div><div><dt>Deliverables</dt><dd>App prototype · Brand guideline · Static website</dd></div></dl><div class="project-actions"><a class="button button-primary" href="/icare/">Open coded website ${icons.arrow}</a><a class="text-link" href="https://www.figma.com/proto/CIkSlz6yesBMVov96lztob/iCare?page-id=0%3A1&node-id=283-123&starting-point-node-id=283%3A123&t=JmlaIZSLHfanwoXb-1" target="_blank" rel="noreferrer">App prototype <span>↗</span></a><a class="text-link" href="https://www.figma.com/proto/CIkSlz6yesBMVov96lztob/iCare?page-id=513%3A211&node-id=1028-79&p=f&viewport=557%2C990%2C0.13&t=0pPbxYnmsoM1kcNN-1&scaling=contain&content-scaling=fixed&starting-point-node-id=1028%3A79" target="_blank" rel="noreferrer">Brand guideline <span>↗</span></a></div></div></article>
+        <article class="ui-project reveal" id="poco-hotel"><div class="ui-placeholder"><span>03 / HOSPITALITY</span><strong>POCO<br>HOTEL</strong><small>UI DESIGN · UX FLOWS</small></div><div class="ui-project-copy"><p class="project-kicker">ARENA MULTIMEDIA · UI/UX</p><h3>Poco Hotel</h3><p>A hospitality interface study organizing discovery, room selection, and booking-oriented content into a clear and polished digital experience.</p><a class="button button-primary" href="https://www.figma.com/design/Ft4zFyA974fFyzoBz4myAV/Poco-Hotel-%7C-L%C3%A3-Th%E1%BB%8B-Thu%E1%BB%B3-Trang?node-id=119-91&t=Fm36u0iFP3eEHeyt-1" target="_blank" rel="noreferrer">View Figma design ${icons.arrow}</a></div></article>
+      </div>
     </section>
   </main>`;
 
 const research = () => `
   <main>
     <section class="page-hero research-hero">
-      <div class="reveal"><p class="eyebrow">RESEARCH PRACTICE / 03</p><h1>Research<br><em>& Publications</em></h1></div>
+      <div class="reveal"><p class="eyebrow">RESEARCH PRACTICE / 04</p><h1>Research<br><em>& Publications</em></h1></div>
       <div class="page-hero-aside reveal"><p>I study how real-time visualization and digital twins can make scientific systems more legible and actionable.</p>${tagList(["Digital twins", "Visual analytics", "Sustainability", "Simulation", "Technical writing"])}</div>
     </section>
     <section class="section publication-list">
@@ -188,7 +295,7 @@ const research = () => `
 const about = () => `
   <main>
     <section class="page-hero about-hero">
-      <div class="reveal"><p class="eyebrow">PROFILE / 04</p><h1>Skylar<br><em>La</em></h1></div>
+      <div class="reveal"><p class="eyebrow">PROFILE / 05</p><h1>Skylar<br><em>La</em></h1></div>
       <div class="page-hero-aside reveal"><p>A visualization researcher and developer working across simulation, real-time 3D, and design—now open to opportunities throughout Vietnam.</p><a class="button button-primary" href="mailto:lathuytrang16@tamu.edu?subject=Portfolio%20inquiry">Contact me ${icons.arrow}</a></div>
     </section>
     <section class="section about-layout">
@@ -217,7 +324,7 @@ const about = () => `
     </section>
   </main>`;
 
-const pages = { home, "digital-twin": digitalTwin, "3d-generalist": generalist, research, about };
+const pages = { home, "digital-twin": digitalTwin, "3d-generalist": generalist, "ui-ux": uiUx, research, about };
 
 document.getElementById("app").innerHTML = `${header()}${pages[page] ? pages[page]() : home()}${footer()}<div class="cursor-glow" aria-hidden="true"></div>`;
 
@@ -240,4 +347,18 @@ window.addEventListener("pointermove", (event) => {
   if (!glow) return;
   glow.style.setProperty("--x", `${event.clientX}px`);
   glow.style.setProperty("--y", `${event.clientY}px`);
+});
+
+const imageViewer = document.querySelector("#image-viewer");
+document.querySelectorAll("[data-full]").forEach((button) => button.addEventListener("click", () => {
+  if (!imageViewer) return;
+  const viewerImage = imageViewer.querySelector("img");
+  viewerImage.src = button.dataset.full;
+  viewerImage.alt = button.dataset.alt;
+  imageViewer.querySelector("p").textContent = button.dataset.alt;
+  imageViewer.showModal();
+}));
+imageViewer?.querySelector("button")?.addEventListener("click", () => imageViewer.close());
+imageViewer?.addEventListener("click", (event) => {
+  if (event.target === imageViewer) imageViewer.close();
 });
