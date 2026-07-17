@@ -205,9 +205,9 @@ const digitalTwin = () => `
     <section class="case-study compact" id="ar">
       <div class="case-layout"><aside class="case-meta reveal"><p>FORMAT</p><strong>Three coded assignments</strong><p>FOCUS</p><strong>AR interaction & spatial storytelling</strong><p>MEDIA</p><strong>Three project films</strong></aside><article class="case-copy reveal"><p class="eyebrow">PROJECT COLLECTION 03</p><h2>Augmented reality studies.</h2><p class="lead">A three-part Unity series investigating how digital content can respond to real-world space.</p><p>I programmed the experiences in C# using Unity. The third assignment extends the pipeline with objects captured through photogrammetry, combining asset acquisition, optimization, interaction, and presentation.</p>${tagList(["Unity", "C#", "AR", "Photogrammetry", "Spatial interaction"])}</article></div>
       <div class="project-video-grid">
-        ${videoCard("MfyWqeeUMc8", "3D AR Study 01", "UNITY · C# · AUGMENTED REALITY")}
-        ${videoCard("lXWZT_A-ezY", "3D AR Study 02", "UNITY · C# · AUGMENTED REALITY")}
-        ${videoCard("Nowm-IpWCnc", "3D AR Study 03", "UNITY · C# · PHOTOGRAMMETRY")}
+        ${videoCard("MfyWqeeUMc8", "TowAR", "3D AR · UNITY · C#")}
+        ${videoCard("lXWZT_A-ezY", "MushJump", "3D AR · UNITY · C#")}
+        ${videoCard("Nowm-IpWCnc", "WardAR", "3D AR · UNITY · C# · PHOTOGRAMMETRY")}
       </div>
     </section>
     <section class="section interactive-films">
@@ -225,9 +225,18 @@ const generalist = () => `
       <div class="reveal"><p class="eyebrow">SPECIALIST PORTFOLIO / DIRECT LINK</p><h1>3D<br><em>Generalist</em></h1></div>
       <div class="page-hero-aside reveal"><p>Real-time-ready environments and assets, built with a full understanding of look development, topology, optimization, and the 3D production pipeline.</p>${tagList(["Unreal Engine", "Maya", "Substance 3D Painter", "Hard-surface", "Look development", "Blueprints"])}</div>
     </section>
-    <section class="reel-panel section">
-      <div class="video-embed reveal"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PL1tX9HxUBcES6xAiVwDfSMVhmwTR33M7Z" title="Skylar La 3D and visualization project films" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-      <div class="reel-copy reveal"><p class="eyebrow">3D GENERALIST FILMS</p><h2>Environment, asset,<br><em>and motion craft.</em></h2><p>The playlist contains the remaining animation, layout, asset, and turntable films. Featured work includes <em>The Guangdong Lion Dance</em>, <em>Shell You Be Mine?</em>, <em>Arrogance vs. Accuracy</em>, <em>Arctic Appetite</em>, and <em>The Seal & The Orcas</em>.</p><a class="text-link" href="https://www.youtube.com/playlist?list=PL1tX9HxUBcES6xAiVwDfSMVhmwTR33M7Z" target="_blank" rel="noreferrer">Open full playlist <span>↗</span></a></div>
+    <section class="section generalist-films">
+      <div class="section-heading reveal"><p class="eyebrow">3D GENERALIST FILMS</p><h2>Environment, asset,<br><em>and motion craft.</em></h2></div>
+      <p class="section-intro reveal">Animation, layout, motion-capture, environment, and asset-turntable work—separated here from the programming and AR films shown in Digital Twin & Interactive.</p>
+      <div class="project-video-grid">
+        ${videoCard("Iomz45cYaFY", "The Guangdong Lion Dance", "SOLE CREATOR · MAYA · SUBSTANCE · UNREAL ENGINE")}
+        ${videoCard("GVcU2PL8bAs", "Shell You Be Mine?", "LAYOUT ARTIST · UNREAL ENGINE")}
+        ${videoCard("0BbA_Cn4XRs", "Arrogance vs. Accuracy", "MOTION CAPTURE · ANIMATION · LIGHTING")}
+        ${videoCard("qLj_8T69-k8", "Arctic Appetite", "ENVIRONMENT MODELING · LAYOUT · 36-HOUR TEAM PROJECT")}
+        ${videoCard("mR1aZ-ybPnw", "The Seal & The Orcas", "ANIMATOR · COMPOSITION DESIGN")}
+        ${videoCard("H4xwnHa51qI", "3D Asset Turntable", "MODELING · TEXTURING · PRESENTATION")}
+      </div>
+      <a class="text-link film-playlist-link" href="https://www.youtube.com/playlist?list=PL1tX9HxUBcES6xAiVwDfSMVhmwTR33M7Z" target="_blank" rel="noreferrer">Open full YouTube playlist <span>↗</span></a>
     </section>
     <section class="section production-pipeline">
       <div class="section-heading reveal"><p class="eyebrow">01 / PRODUCTION PIPELINE</p><h2>From blockout<br><em>to real time.</em></h2></div>
