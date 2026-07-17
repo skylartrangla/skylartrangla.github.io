@@ -24,6 +24,17 @@ const projectVisual = (type, label, index = "01") => `
     <div class="media-placeholder">${icons.play}<span>Project film<br><small>Video coming soon</small></span></div>
   </div>`;
 
+const optimizedCoverPaths = {
+  "/images/iCare.png": "/assets/covers/icare.webp",
+  "/images/Poco%20Hotel.png": "/assets/covers/poco-hotel.webp",
+  "/images/Paper%201%20-%20Digital%20Twin.png": "/assets/covers/paper-1.webp",
+  "/images/Paper%202%20-%20Guangdong%20Lion%20Dance.png": "/assets/covers/paper-2.webp",
+  "/images/Portrait.JPG": "/assets/covers/portrait.webp",
+};
+
+const projectCover = (src, alt, className = "") => `
+  <figure class="project-cover ${className}"><img src="${optimizedCoverPaths[src] || src}" alt="${alt}" loading="lazy" decoding="async"></figure>`;
+
 const tagList = (items) => `<ul class="tag-list">${items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
 
 const galleryImage = (src, alt, className = "") => `
@@ -43,20 +54,20 @@ const threeDProjects = [
     number: "01",
     title: "Still-Life Look Development",
     kicker: "LOOK DEVELOPMENT · RENDERING & SHADING",
-    description: "A complete scene study progressing from greyscale form and material development to rig lighting and final cinematic composition. Created as the final project for Rendering & Shading, taught by Caleb Kicklighter and Jeff Nichols.",
-    tags: ["Maya", "Look development", "Shading", "Lighting", "Composition"],
+    description: "Still-life look development created as the final project for the Rendering & Shading class taught by Caleb Kicklighter and Jeff Nichols. Models were provided by the instructors; I developed the materials, lighting, and final presentation.",
+    tags: ["Substance 3D Painter", "Maya", "RenderMan", "Look development"],
     images: [
-      ["/assets/3d/01-lookdev-greyscale.webp", "Greyscale still-life scene with skull, lamp, violin, books, and drawing tools"],
-      ["/assets/3d/01-lookdev-vdev.webp", "Material-development and rig-lighting stage of the still-life scene"],
       ["/assets/3d/01-lookdev-final.webp", "Final warmly lit composition of the still-life scene"],
+      ["/assets/3d/01-lookdev-vdev.webp", "Material-development and rig-lighting stage of the still-life scene"],
+      ["/assets/3d/01-lookdev-greyscale.webp", "Greyscale still-life scene with skull, lamp, violin, books, and drawing tools"],
     ],
   },
   {
     number: "02",
     title: "Outdoor Messenger Bag",
-    kicker: "HARD-SURFACE · MODELING & TEXTURING",
-    description: "A production study focused on believable construction, layered fabric and leather materials, hardware details, topology, and presentation across multiple views.",
-    tags: ["Maya", "Substance 3D Painter", "Topology", "PBR texturing", "Asset presentation"],
+    kicker: "REALISTIC TEXTURING · SCHOOL ASSIGNMENT",
+    description: "Texturing for an Outdoor Messenger Bag created for a school assignment in a realistic art style.",
+    tags: ["Substance 3D Painter", "Maya", "RenderMan", "Realistic"],
     images: [
       ["/assets/3d/02-messenger-01.webp", "Outdoor messenger bag front material detail"],
       ["/assets/3d/02-messenger-02.webp", "Outdoor messenger bag side pocket and hardware detail"],
@@ -68,10 +79,10 @@ const threeDProjects = [
   },
   {
     number: "03",
-    title: "Vintage Coffee Grinder",
-    kicker: "HARD-SURFACE · MATERIAL STUDY",
-    description: "An aged mechanical prop exploring wood grain, worn metal, surface variation, and readable construction from hero and turnaround views.",
-    tags: ["Maya", "Substance 3D Painter", "Hard-surface", "Material definition"],
+    title: "Coffee Grinder",
+    kicker: "REALISTIC TEXTURING · SCHOOL ASSIGNMENT",
+    description: "Texturing for a Coffee Grinder created for a school assignment in a realistic art style.",
+    tags: ["Substance 3D Painter", "Maya", "RenderMan", "Realistic"],
     images: [
       ["/assets/3d/03-grinder-01.webp", "Vintage coffee grinder reference and rendered comparison"],
       ["/assets/3d/03-grinder-02.webp", "Vintage coffee grinder front three-quarter view"],
@@ -85,11 +96,11 @@ const threeDProjects = [
 ];
 
 const assetStudies = [
-  ["04", "Duckbill Ground Clamp", "Realistic Maya and Substance 3D Painter asset created for a factory-safety AR game during my VRTech internship.", "/assets/3d/04-can-opener-01.webp", "/assets/3d/04-can-opener-02.webp"],
-  ["05", "Big-Headed Monk Mask / Dai Tou Fut", "Maya and Substance 3D Painter prop created for my research on AR in Guangdong lion dance.", "/assets/3d/05-mask-01.webp", "/assets/3d/05-mask-02.webp"],
-  ["06", "Lion Dance Drum (Da Shi Gu 大狮鼓)", "Realistic Maya and Substance 3D Painter cultural prop created for my capstone research.", "/assets/3d/06-drum-01.webp", "/assets/3d/06-drum-02.webp"],
-  ["07", "Gong and Mallet", "Realistic Maya and Substance 3D Painter cultural prop created for my capstone research.", "/assets/3d/07-gong-01.webp", "/assets/3d/07-gong-02.webp"],
-  ["08", "Lamppost", "Stylized environment prop created in 3ds Max for a 3D modeling class.", "/assets/3d/08-lantern-01.webp", "/assets/3d/08-lantern-02.webp"],
+  ["04", "Duckbill Ground Clamp", "Model for a factory-safety AR game created during my VRTech internship. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/04-can-opener-01.webp", "/assets/3d/04-can-opener-02.webp"],
+  ["05", "Big-Headed Monk Mask / Dai Tou Fut", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance · Maya · Substance 3D Painter.", "/assets/3d/05-mask-01.webp", "/assets/3d/05-mask-02.webp"],
+  ["06", "Lion Dance Drum (Da Shi Gu 大狮鼓)", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/06-drum-01.webp", "/assets/3d/06-drum-02.webp"],
+  ["07", "Gong and Mallet", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/07-gong-01.webp", "/assets/3d/07-gong-02.webp"],
+  ["08", "Lamppost", "Model created for a 3D Modeling class. Stylized art style · 3ds Max.", "/assets/3d/08-lantern-01.webp", "/assets/3d/08-lantern-02.webp"],
 ];
 
 const header = () => `
@@ -149,18 +160,18 @@ const home = () => `
         <h2>Systems, stories,<br><em>and spatial experiences.</em></h2>
       </div>
       <article class="featured-project reveal">
-        ${projectVisual("twin", "Sustainable livestock digital twin", "01")}
+        ${projectCover("/assets/covers/digital-twin.webp", "BovineTwin sustainable livestock digital twin cover")}
         <div class="project-copy">
           <p class="project-kicker">FLAGSHIP · RESEARCH & ENGINEERING</p>
           <h3>Real-time digital twin for sustainable livestock systems</h3>
-          <p>An Unreal Engine environment that streams agent-based cattle methane simulation data from Google Colab through MQTT and JSON—turning model outputs into synchronized, interactive visual analytics.</p>
-          ${tagList(["Unreal Engine", "MQTT / JSON", "Google Colab", "Agent-based simulation"])}
+          <p>An individual-level livestock framework pairing a Mesa agent-based methane-energy model with an interactive Unreal Engine 5.4 interface and a target MQTT–JSON sensor architecture.</p>
+          ${tagList(["Unreal Engine 5.4", "Mesa / Python", "MQTT / JSON architecture", "Agent-based simulation"])}
           <a class="text-link" href="/digital-twin/#livestock">View case study <span>→</span></a>
         </div>
       </article>
       <div class="project-grid">
         <article class="project-card reveal">
-          ${projectVisual("mobility", "Connected mobility digital twin", "02")}
+          ${projectCover("/assets/covers/endeavr.webp", "ENDEAVR connected mobility digital twin cover")}
           <div><p class="project-kicker">DIGITAL TWIN · UX/UI</p><h3>Connected mobility simulation</h3><p>Cesium geospatial context, Unreal Mass AI crowds, and an in-vehicle interface prototype.</p><a class="text-link" href="/digital-twin/#mobility">See project <span>→</span></a></div>
         </article>
         <article class="project-card reveal">
@@ -192,14 +203,14 @@ const digitalTwin = () => `
       <div class="page-hero-aside reveal"><p>I prototype real-time systems where data, simulation, 3D environments, and human decisions meet.</p>${tagList(["Unreal Engine", "Unity / C#", "MQTT / JSON", "Cesium", "Mass AI", "Photogrammetry"])}</div>
     </section>
     <section class="case-study" id="livestock">
-      ${projectVisual("twin", "Sustainable livestock digital twin", "01")}
+      ${projectCover("/assets/covers/digital-twin.webp", "BovineTwin sustainable livestock digital twin cover", "case-cover")}
       <div class="case-layout">
         <aside class="case-meta reveal"><p>ROLE</p><strong>Graduate Research Assistant<br>Digital Twin Developer</strong><p>CONTEXT</p><strong>AI for Sustainable Livestock System Lab<br>Texas A&M University</strong><p>STATUS</p><strong>Research in progress · 2025—Present</strong></aside>
-        <article class="case-copy reveal"><p class="eyebrow">CASE STUDY 01</p><h2>Making methane simulation visible in real time.</h2><p class="lead">A two-way digital twin prototype that brings agent-based cattle methane simulation into an interactive Unreal Engine environment.</p><h3>The challenge</h3><p>Complex model outputs are difficult for non-technical stakeholders to inspect. The project explores how synchronized 3D visualization can make animal-level behavior and emissions easier to understand and evaluate.</p><h3>My contribution</h3><p>I developed the Unreal Engine environment and connected it to simulations running in Google Colab using MQTT and JSON. I designed the streaming logic, synchronized feedback, interactive visualizations, and performance benchmarks while contributing to the research manuscript and guiding five undergraduate co-authors.</p><div class="process-row"><span>SIMULATE<small>Agent-based model</small></span><b>→</b><span>STREAM<small>MQTT · JSON</small></span><b>→</b><span>VISUALIZE<small>Unreal Engine</small></span><b>→</b><span>EVALUATE<small>Benchmarks</small></span></div>${tagList(["Unreal Engine", "Blueprints / C++", "Google Colab", "MQTT", "JSON", "Visual analytics"])}</article>
+        <article class="case-copy reveal"><p class="eyebrow">CASE STUDY 01</p><h2>Making methane-energy partitioning visible by animal.</h2><p class="lead">BovineTwin combines an individual-level Mesa agent-based model with an interactive Unreal Engine 5.4 feedlot interface.</p><h3>The challenge</h3><p>Herd averages hide which animals drive methane-associated energy loss. The framework calibrates animal-level models and makes individual trajectories and mitigation scenarios inspectable in 3D.</p><h3>My contribution</h3><p>As a shared first author, I contributed conceptualization, methodology, software, data curation, visualization, investigation, writing, supervision, and project administration. I developed the Unreal Engine interface and the target MQTT–JSON architecture. In this proof of concept, model outputs were transferred through CSV and Unreal DataTables; operational live-sensor validation is future work.</p><div class="process-row"><span>CALIBRATE<small>Individual records</small></span><b>→</b><span>SIMULATE<small>Mesa · Python</small></span><b>→</b><span>VISUALIZE<small>Unreal Engine 5.4</small></span><b>→</b><span>COMPARE<small>Mitigation scenarios</small></span></div>${tagList(["Unreal Engine 5.4", "Mesa / Python", "MQTT / JSON architecture", "CSV / DataTables", "Visual analytics"])}</article>
       </div>
     </section>
     <section class="case-study compact" id="mobility">
-      ${projectVisual("mobility", "Connected mobility digital twin", "02")}
+      ${projectCover("/assets/covers/endeavr.webp", "ENDEAVR connected mobility digital twin cover", "case-cover")}
       <div class="case-layout"><aside class="case-meta reveal"><p>ROLE</p><strong>Digital Design Intern</strong><p>ORGANIZATION</p><strong>ENDEAVR Institute</strong><p>YEAR</p><strong>2025</strong></aside><article class="case-copy reveal"><p class="eyebrow">CASE STUDY 02</p><h2>Connected mobility, from landscape to interface.</h2><p class="lead">An interactive prototype pairing geospatial context and crowd simulation with a three-mode in-vehicle UX concept.</p><p>I imported Google Earth data through Cesium, drew custom movement paths, and simulated crowds with Unreal Mass AI. In parallel, I translated technical requirements into wireframes for Self-driving, AI Training, and AI Driving modes, supported by a cohesive visual language.</p>${tagList(["Unreal Engine", "Cesium", "Mass AI", "UX/UI", "Crowd simulation"])}</article></div>
     </section>
     <section class="case-study compact" id="ar">
@@ -234,7 +245,6 @@ const generalist = () => `
         ${videoCard("0BbA_Cn4XRs", "Arrogance vs. Accuracy", "MOTION CAPTURE · ANIMATION · LIGHTING")}
         ${videoCard("qLj_8T69-k8", "Arctic Appetite", "ENVIRONMENT MODELING · LAYOUT · 36-HOUR TEAM PROJECT")}
         ${videoCard("mR1aZ-ybPnw", "The Seal & The Orcas", "ANIMATOR · COMPOSITION DESIGN")}
-        ${videoCard("H4xwnHa51qI", "3D Asset Turntable", "MODELING · TEXTURING · PRESENTATION")}
       </div>
       <a class="text-link film-playlist-link" href="https://www.youtube.com/playlist?list=PL1tX9HxUBcES6xAiVwDfSMVhmwTR33M7Z" target="_blank" rel="noreferrer">Open full YouTube playlist <span>↗</span></a>
     </section>
@@ -252,6 +262,10 @@ const generalist = () => `
     </section>
     <section class="section gallery-section">
       <div class="section-heading reveal"><p class="eyebrow">02 / SELECTED 3D WORK</p><h2>Modeling, materials,<br><em>and look development.</em></h2></div>
+      <article class="selected-turntable reveal">
+        <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/H4xwnHa51qI" title="3D Animation: Turntable" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div><p class="project-kicker">3D ANIMATION · TURNTABLE</p><h3>Selected assets in rotation.</h3><p>A turntable overview of the modeling, texturing, and presentation work documented below.</p></div>
+      </article>
       <div class="portfolio-projects">
         ${threeDProjects.map((project) => `<article class="portfolio-project" id="project-${project.number}">
           <header class="project-header reveal"><span>${project.number}</span><div><p class="project-kicker">${project.kicker}</p><h3>${project.title}</h3><p>${project.description}</p>${tagList(project.tags)}</div></header>
@@ -273,14 +287,14 @@ const uiUx = () => `
       <div class="page-hero-aside reveal"><p>I organize complex interactions into clear flows, wireframes, and visual systems for mobility, care, and hospitality experiences.</p>${tagList(["Wireframing", "Interaction flows", "Automotive HMI", "Prototyping", "Visual design"])}</div>
     </section>
     <section class="section ui-case-featured" id="automotive">
-      <div class="ui-placeholder reveal"><span>AUTOMOTIVE HMI</span><strong>WIREFRAME<br>ARCHIVE</strong><small>PROJECT SCREENS TO BE ADDED</small></div>
+      ${projectCover("/assets/covers/endeavr.webp", "WeDrive automotive HMI wireframe cover", "ui-cover reveal")}
       <article class="ui-case-copy reveal"><p class="eyebrow">01 / ENDEAVR INSTITUTE · 2025</p><h2>WeDrive: three-mode in-vehicle interface.</h2><p class="lead">A wireframe system translating technical documentation into approachable flows for Self-driving, AI Training, and AI Driving modes.</p><p>I mapped the product logic, organized information across three operating states, and established a cohesive visual direction. The UI work accompanied an Unreal Engine mobility prototype using Cesium and Mass AI, giving me experience across both interface and 3D implementation contexts.</p>${tagList(["Automotive HMI", "Wireframes", "Information architecture", "UX/UI", "Unreal Engine context"])}<a class="button button-primary" href="https://www.figma.com/proto/fnip6iH4PDqzlVgrygsrmi/WeDrive?page-id=129%3A989&node-id=129-990&p=f&viewport=711%2C133%2C0.06&t=MB5LuE9SWEGzhRQg-1&scaling=contain&content-scaling=fixed" target="_blank" rel="noreferrer">View WeDrive prototype ${icons.arrow}</a></article>
     </section>
     <section class="section ui-archive">
       <div class="section-heading reveal"><p class="eyebrow">02 / ARENA MULTIMEDIA</p><h2>Interface<br><em>case archive.</em></h2></div>
       <div class="ui-project-grid">
-        <article class="ui-project reveal" id="icare"><div class="ui-placeholder icare-visual"><span>02 / CARE EXPERIENCE</span><strong>iCARE</strong><small>MOBILE UI · BRAND SYSTEM · CODED WEBSITE</small></div><div class="ui-project-copy"><p class="project-kicker">ARENA MULTIMEDIA · TEAM PROJECT</p><h3>iCare healthcare experience</h3><p>A healthcare experience developed across mobile UI/UX, brand direction, and a responsive coded website. The prototype begins with a bright blue onboarding system and extends into a complete iCare visual identity.</p><dl class="project-facts"><div><dt>Role</dt><dd>Project lead · UI/UX designer · Web coder</dd></div><div><dt>Deliverables</dt><dd>App prototype · Brand guideline · Static website</dd></div></dl><div class="project-actions"><a class="button button-primary" href="/icare/">Open coded website ${icons.arrow}</a><a class="text-link" href="https://www.figma.com/proto/CIkSlz6yesBMVov96lztob/iCare?page-id=0%3A1&node-id=283-123&starting-point-node-id=283%3A123&t=JmlaIZSLHfanwoXb-1" target="_blank" rel="noreferrer">App prototype <span>↗</span></a><a class="text-link" href="https://www.figma.com/proto/CIkSlz6yesBMVov96lztob/iCare?page-id=513%3A211&node-id=1028-79&p=f&viewport=557%2C990%2C0.13&t=0pPbxYnmsoM1kcNN-1&scaling=contain&content-scaling=fixed&starting-point-node-id=1028%3A79" target="_blank" rel="noreferrer">Brand guideline <span>↗</span></a></div></div></article>
-        <article class="ui-project reveal" id="poco-hotel"><div class="ui-placeholder"><span>03 / HOSPITALITY</span><strong>POCO<br>HOTEL</strong><small>UI DESIGN · UX FLOWS</small></div><div class="ui-project-copy"><p class="project-kicker">ARENA MULTIMEDIA · UI/UX</p><h3>Poco Hotel</h3><p>A hospitality interface study organizing discovery, room selection, and booking-oriented content into a clear and polished digital experience.</p><a class="button button-primary" href="https://www.figma.com/design/Ft4zFyA974fFyzoBz4myAV/Poco-Hotel-%7C-L%C3%A3-Th%E1%BB%8B-Thu%E1%BB%B3-Trang?node-id=119-91&t=Fm36u0iFP3eEHeyt-1" target="_blank" rel="noreferrer">View Figma design ${icons.arrow}</a></div></article>
+        <article class="ui-project reveal" id="icare">${projectCover("/images/iCare.png", "iCare mobile application and brand system cover", "ui-project-cover")}<div class="ui-project-copy"><p class="project-kicker">ARENA MULTIMEDIA · TEAM PROJECT</p><h3>iCare healthcare experience</h3><p>A healthcare experience developed across mobile UI/UX, brand direction, and a responsive coded website. The prototype begins with a bright blue onboarding system and extends into a complete iCare visual identity.</p><dl class="project-facts"><div><dt>Role</dt><dd>Project lead · UI/UX designer · Web coder</dd></div><div><dt>Deliverables</dt><dd>App prototype · Brand guideline · Static website</dd></div></dl><div class="project-actions"><a class="button button-primary" href="/icare/">Open coded website ${icons.arrow}</a><a class="text-link" href="https://www.figma.com/proto/CIkSlz6yesBMVov96lztob/iCare?page-id=0%3A1&node-id=283-123&starting-point-node-id=283%3A123&t=JmlaIZSLHfanwoXb-1" target="_blank" rel="noreferrer">App prototype <span>↗</span></a><a class="text-link" href="https://www.figma.com/proto/CIkSlz6yesBMVov96lztob/iCare?page-id=513%3A211&node-id=1028-79&p=f&viewport=557%2C990%2C0.13&t=0pPbxYnmsoM1kcNN-1&scaling=contain&content-scaling=fixed&starting-point-node-id=1028%3A79" target="_blank" rel="noreferrer">Brand guideline <span>↗</span></a></div></div></article>
+        <article class="ui-project reveal" id="poco-hotel">${projectCover("/images/Poco%20Hotel.png", "Poco Hotel UI and UX design cover", "ui-project-cover")}<div class="ui-project-copy"><p class="project-kicker">ARENA MULTIMEDIA · UI/UX</p><h3>Poco Hotel</h3><p>A hospitality interface study organizing discovery, room selection, and booking-oriented content into a clear and polished digital experience.</p><a class="button button-primary" href="https://www.figma.com/design/Ft4zFyA974fFyzoBz4myAV/Poco-Hotel-%7C-L%C3%A3-Th%E1%BB%8B-Thu%E1%BB%B3-Trang?node-id=119-91&t=Fm36u0iFP3eEHeyt-1" target="_blank" rel="noreferrer">View Figma design ${icons.arrow}</a></div></article>
       </div>
     </section>
   </main>`;
@@ -293,11 +307,13 @@ const research = () => `
     </section>
     <section class="section publication-list">
       <article class="publication featured-publication reveal">
-        <div class="publication-image"><span>RESEARCH FIGURE PLACEHOLDER</span><div class="figure-lines"></div></div>
-        <div class="publication-copy"><p class="pub-status">MANUSCRIPT IN PROGRESS · 2025—PRESENT</p><h2>Digital twin visualization for sustainable livestock systems</h2><p>Research exploring the integration of agent-based methane simulation, real-time data exchange, and interactive Unreal Engine visualization for animal science and sustainability decision-making.</p><dl><div><dt>Contribution</dt><dd>Digital twin development, interaction design, performance benchmarking, technical writing, undergraduate research leadership</dd></div><div><dt>Affiliation</dt><dd>AI for Sustainable Livestock System Lab · Texas A&M University</dd></div></dl><p class="note">Formal title, author list, figures, and publication link will be added when approved for public release.</p></div>
+        ${projectCover("/images/Paper%201%20-%20Digital%20Twin.png", "BovineTwin research paper cover", "publication-cover")}
+        <div class="publication-copy"><p class="pub-status">PAPER 01 · UNDER REVIEW · COMPUTERS AND ELECTRONICS IN AGRICULTURE</p><h2>BovineTwin: An Individual-Level 3D Digital Twin Framework for Methane-Energy Partitioning in Beef Cattle</h2><p class="lead">A functional proof of concept that calibrates per-animal energy models and renders methane loss and mitigation scenarios through an interactive Unreal Engine 5.4 feedlot.</p><p>The framework integrates a Mesa-based agent model with an Unreal visualization layer and a target MQTT–JSON architecture for future live sensor deployment. It reframes enteric methane as measurable, potentially recoverable feed energy at the individual-animal level.</p><dl><div><dt>Authorship</dt><dd>Shared first author</dd></div><div><dt>Contribution</dt><dd>Conceptualization · Methodology · Software · Data curation · Visualization · Investigation · Writing · Supervision · Project administration</dd></div><div><dt>Affiliation</dt><dd>AI for Sustainable Livestock System Lab · Texas A&M University</dd></div></dl><div class="research-venues"><p>Presented or delivered at</p><ul><li>Viz-a-GoGo 2025 · Texas A&M University</li><li>Texas Digital Twin Symposium</li><li>8th EAAP International Symposium on Energy and Protein Metabolism and Nutrition</li><li>Student Research Week</li><li>Diversity in Science Symposium</li></ul></div></div>
       </article>
-      <article class="publication text-publication reveal"><div><span class="pub-number">02</span><p class="pub-status">BOOK CHAPTER · CONTRIBUTOR</p></div><div><h2>Artificial Intelligence in Veterinary and Animal Science</h2><p><em>Principles, Applications, and Future Directions</em></p><p>Technical writing contribution developed with Animal Science doctoral researchers, including digital twin perspectives and applications.</p></div></article>
-      <article class="publication text-publication reveal"><div><span class="pub-number">03</span><p class="pub-status">TEACHING & KNOWLEDGE TRANSFER</p></div><div><h2>Visualization education</h2><p>Graduate teaching across Visual Studies Studio, Principles of Design, and History of Modern Art, including specialized instruction in Unreal Engine, photogrammetry, and 3D design principles.</p></div></article>
+      <article class="publication featured-publication publication-reverse reveal">
+        ${projectCover("/images/Paper%202%20-%20Guangdong%20Lion%20Dance.png", "Guangdong Lion Dance research paper cover", "publication-cover")}
+        <div class="publication-copy"><p class="pub-status">PAPER 02 · MASTER'S CAPSTONE · ACCEPTED AT TEXAS A&M VISUALIZATION FALL RESEARCH SYMPOSIUM</p><h2>From Tradition to Technology: Preserving the Guangdong Lion Dance Through 3D Visualization and Augmented Reality</h2><p class="lead">A research-driven cultural preservation project combining historical scholarship, full-stack 3D production, AI-assisted workflows, and a Unity AR experience.</p><p>I reconstructed lion heads, team members, costumes, masks, and instruments as high-precision 3D assets, then designed an AR interface where audiences can explore their cultural meaning. The project addresses the scarcity of authentic Asian cultural assets and the limited use of AR in Asian museum experiences.</p><dl><div><dt>3D pipeline</dt><dd>Modeling & UVs · Texturing · Grooming · Rigging & animation · Lighting & real-time rendering</dd></div><div><dt>Interactive</dt><dd>Unity · Vuforia · AR programming · Educational interaction design</dd></div><div><dt>Software & AI</dt><dd>Maya · Substance 3D Painter · Unreal Engine · Unity · Character Creator 4 & 5 · Quick Magic AI</dd></div><div><dt>Recognition</dt><dd>Distinguished Student Award · Master of Science in Visualization</dd></div></dl><a class="button button-primary" href="https://canva.link/xustuzgkw5vy8lj" target="_blank" rel="noreferrer">View presentation ${icons.arrow}</a></div>
+      </article>
     </section>
   </main>`;
 
@@ -308,7 +324,7 @@ const about = () => `
       <div class="page-hero-aside reveal"><p>A visualization researcher and developer working across simulation, real-time 3D, and design—now open to opportunities throughout Vietnam.</p><a class="button button-primary" href="mailto:lathuytrang16@tamu.edu?subject=Portfolio%20inquiry">Contact me ${icons.arrow}</a></div>
     </section>
     <section class="section about-layout">
-      <div class="portrait-placeholder reveal"><span>SL</span><small>PORTRAIT PLACEHOLDER</small></div>
+      ${projectCover("/images/Portrait.JPG", "Portrait of Skylar La", "portrait-cover reveal")}
       <div class="about-copy reveal"><p class="eyebrow">ABOUT</p><h2>I translate between<br><em>technical and visual worlds.</em></h2><p class="lead">My path through economics, multimedia, and visualization shaped a practice that combines analytical thinking with hands-on production.</p><p>I hold an MS in Visualization from Texas A&M University, an Advanced Diploma in Multimedia Communications from Arena Multimedia, and a bachelor’s degree in International Economics from Foreign Trade University. My work spans research laboratories, mobility innovation, VR production, and university teaching.</p><p>I am particularly interested in digital twin and real-time visualization roles, followed by applied visualization research and focused 3D Generalist opportunities.</p></div>
     </section>
     <section class="section resume-section">
