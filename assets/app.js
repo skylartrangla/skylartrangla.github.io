@@ -136,8 +136,8 @@ const home = () => `
     <section class="hero home-hero">
       <div class="hero-copy reveal">
         <p class="eyebrow">DIGITAL TWIN DEVELOPER · VISUALIZATION RESEARCHER · 3D GENERALIST</p>
-        <h1>I build virtual worlds<br>that <em>think back.</em></h1>
-        <p class="hero-summary">I connect real-time simulation, research, and cinematic 3D to make complex systems visible, interactive, and useful.</p>
+        <h1>I see<br>that <em>the whole system.</em></h1>
+        <p class="hero-summary">My multidisciplinary background allows me to approach projects from four connected perspectives—from strategic reasoning and research to technical development and visual execution.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="/digital-twin/">Explore digital twin work ${icons.arrow}</a>
           <a class="text-link" href="/3d-generalist/">View 3D portfolio <span>→</span></a>
@@ -145,10 +145,10 @@ const home = () => `
       </div>
       <div class="hero-system reveal" aria-label="Abstract real-time system visualization">
         <div class="system-orbit orbit-one"></div><div class="system-orbit orbit-two"></div>
-        <div class="system-core"><span>REAL</span><strong>↔</strong><span>VIRTUAL</span></div>
-        <div class="system-node node-a">MQTT<small>DATA STREAM</small></div>
-        <div class="system-node node-b">UE5<small>SIMULATION</small></div>
-        <div class="system-node node-c">3D<small>EXPERIENCE</small></div>
+        <div class="system-node node-a">VISUALIZE<small>3D GENERALIST</small></div>
+        <div class="system-node node-b">BUILD<small>DEVELOPER</small></div>
+        <div class="system-node node-c">THINK<small>ECONOMIST</small></div>
+        <div class="system-node node-d">INVESTIGATE<small>RESEARCHER</small></div>
         <div class="system-readout"><span>SYNC</span><b>24 FPS</b><i></i></div>
       </div>
       <div class="scroll-cue"><span></span>Scroll to selected work</div>
