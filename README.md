@@ -17,10 +17,8 @@ The site is dependency-free and built with semantic HTML, modern CSS, and modula
 ## Local preview
 
 ```bash
-python3 -m http.server 8000
+skylartrangla.github.io
 ```
-
-Then visit `http://localhost:8000`.
 
 ## Content roadmap
 
