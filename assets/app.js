@@ -100,7 +100,8 @@ const assetStudies = [
   ["05", "Big-Headed Monk Mask / Dai Tou Fut", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance · Maya · Substance 3D Painter.", "/assets/3d/05-mask-01.webp", "/assets/3d/05-mask-02.webp"],
   ["06", "Lion Dance Drum (Da Shi Gu 大狮鼓)", "Illustrated prop for my master's capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/06-drum-01.webp", "/assets/3d/06-drum-02.webp"],
   ["07", "Gong and Mallet", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/07-gong-01.webp", "/assets/3d/07-gong-02.webp"],
-  ["08", "Lamppost", "Model created for a 3D Modeling class. Stylized art style · 3ds Max.", "/assets/3d/08-lantern-01.webp", "/assets/3d/08-lantern-02.webp"],
+  ["08", "Foshan Lion Head", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/images/8.png"],
+  ["09", "Lamppost", "Model created for a 3D Modeling class. Stylized art style · 3ds Max.", "/assets/3d/08-lantern-01.webp", "/assets/3d/08-lantern-02.webp"],
 ];
 
 const header = () => `
@@ -274,7 +275,7 @@ const generalist = () => `
     </section>
     <section class="section asset-studies">
       <div class="section-heading reveal"><p class="eyebrow">03 / ASSET STUDIES</p><h2>Topology<br><em>to surface.</em></h2></div>
-      <div class="asset-study-grid">${assetStudies.map(([number, title, description, wireframe, surfaced]) => `<article class="asset-study reveal"><header><span>${number}</span><div><h3>${title}</h3><p>${description}</p></div></header><div>${galleryImage(wireframe, `${title} wireframe`)}${galleryImage(surfaced, `${title} surfaced render`)}</div></article>`).join("")}</div>
+      <div class="asset-study-grid">${assetStudies.map(([number, title, description, wireframe, surfaced]) => `<article class="asset-study reveal"><header><span>${number}</span><div><h3>${title}</h3><p>${description}</p></div></header><div class="${surfaced ? "" : "asset-study-single"}">${galleryImage(wireframe, surfaced ? `${title} wireframe` : `${title} render`)}${surfaced ? galleryImage(surfaced, `${title} surfaced render`) : ""}</div></article>`).join("")}</div>
     </section>
     <dialog class="image-viewer" id="image-viewer"><button type="button" aria-label="Close full image">×</button><img alt=""><p></p></dialog>
   </main>`;
