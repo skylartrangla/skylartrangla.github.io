@@ -320,30 +320,30 @@ const research = () => `
 const about = () => `
   <main>
     <section class="page-hero about-hero">
-      <div class="reveal"><p class="eyebrow">PROFILE / 05</p><h1>Skylar<br><em>La</em></h1></div>
-      <div class="page-hero-aside reveal"><p>A visualization researcher and developer working across simulation, real-time 3D, and design—now open to opportunities throughout Vietnam.</p><a class="button button-primary" href="mailto:lathuytrang16@tamu.edu?subject=Portfolio%20inquiry">Contact me ${icons.arrow}</a></div>
+      <div class="reveal"><p class="eyebrow">PROFILE / 05</p><h1>Skylar<br><em>Trang La</em></h1></div>
+      <div class="page-hero-aside reveal"><p>A visualization researcher and developer working across simulation, real-time 3D, and design. Now open to opportunities throughout Vietnam.</p><a class="button button-primary" href="mailto:lathuytrang16@tamu.edu?subject=Portfolio%20inquiry">Contact me ${icons.arrow}</a></div>
     </section>
     <section class="section about-layout">
       ${projectCover("/images/Portrait.JPG", "Portrait of Skylar La", "portrait-cover reveal")}
-      <div class="about-copy reveal"><p class="eyebrow">ABOUT</p><h2>I translate between<br><em>technical and visual worlds.</em></h2><p class="lead">My path through economics, multimedia, and visualization shaped a practice that combines analytical thinking with hands-on production.</p><p>I hold an MS in Visualization from Texas A&M University, an Advanced Diploma in Multimedia Communications from Arena Multimedia, and a bachelor’s degree in International Economics from Foreign Trade University. My work spans research laboratories, mobility innovation, VR production, and university teaching.</p><p>I am particularly interested in digital twin and real-time visualization roles, followed by applied visualization research and focused 3D Generalist opportunities.</p></div>
+      <div class="about-copy reveal"><p class="eyebrow">ABOUT</p><h2>I translate between<br><em>technical and visual worlds.</em></h2><p class="lead">My path through economics, multimedia, and visualization shaped a practice that combines analytical thinking with hands-on production.</p><p>I hold a Master of Science in Visualization from Texas A&M University, an Advanced Diploma in Multimedia Communications from Arena Multimedia, and a Bachelor’s degree in International Economics from Foreign Trade University. My work experience spans research laboratories, AR production, and university teaching related to 3D field.</p><p>I am particularly interested in digital twin and real-time visualization roles, followed by applied visualization research and focused 3D Generalist opportunities.</p></div>
     </section>
     <section class="section resume-section">
       <div class="section-heading reveal"><p class="eyebrow">01 / EXPERIENCE</p><h2>Selected<br><em>experience.</em></h2></div>
       <div class="timeline">
         ${[
-          ["2025—PRESENT", "Graduate Research Assistant", "AI for Sustainable Livestock System Lab · Texas A&M", "Real-time digital twin development, methane simulation visualization, performance benchmarking, research writing, and undergraduate mentorship."],
-          ["2023—2025", "Graduate Teaching Assistant", "Visualization Department · Texas A&M", "Instruction and course support across design, art history, and visual studies; specialized teaching in Unreal Engine, photogrammetry, and 3D principles."],
-          ["2025", "Digital Design Intern", "ENDEAVR Institute", "Interactive mobility digital twin prototype, Unreal Engine crowd simulation, geospatial integration, and in-vehicle UX/UI."],
-          ["2024", "3D Artist Intern", "Vietnam VR Tech Company", "Modeling, texturing, rigging, skin weighting, animation, game testing, and technical localization."],
+          ["2025—PRESENT", "Graduate Research Assistant", "AI for Sustainable Livestock System Lab · Texas A&M University · USA", "Real-time digital twin development, methane simulation visualization, performance benchmarking, research writing, and undergraduate mentorship."],
+          ["2023—2025", "Graduate Teaching Assistant", "Visualization Department · Texas A&M University · USA", "Instruction and course support across design, art history, and visual studies; specialized teaching in Unreal Engine, photogrammetry, and 3D principles."],
+          ["2025", "Digital Design Intern", "ENDEAVR Institute · USA", "Interactive mobility digital twin prototype, Unreal Engine crowd simulation, geospatial integration, and in-vehicle UX/UI."],
+          ["2024", "3D Artist Intern", "VR Tech Company · Vietnam", "Modeling, texturing, rigging, skin weighting, animation, game testing, and technical localization."],
         ].map(([year, role, org, desc]) => `<article class="timeline-item reveal"><time>${year}</time><div><h3>${role}</h3><strong>${org}</strong><p>${desc}</p></div></article>`).join("")}
       </div>
     </section>
     <section class="section education-section">
       <div class="section-heading reveal"><p class="eyebrow">02 / EDUCATION & RECOGNITION</p><h2>Three disciplines.<br><em>One perspective.</em></h2></div>
       <div class="education-grid">
-        <article class="reveal"><span>2025</span><h3>MS · Visualization</h3><p>Texas A&M University</p><small>GPR 3.86 · Distinguished Student Award</small></article>
-        <article class="reveal"><span>2023</span><h3>Advanced Diploma · Multimedia Communications</h3><p>Arena Multimedia · Hanoi</p><small>Distinction</small></article>
-        <article class="reveal"><span>2023</span><h3>BA · International Economics</h3><p>Foreign Trade University · Hanoi</p><small>Distinction</small></article>
+        <article class="reveal"><span>2025</span><h3>MS · Visualization</h3><p>Texas A&M University · USA</p><small>GPR 3.86 · Distinguished Student Award</small></article>
+        <article class="reveal"><span>2023</span><h3>Advanced Diploma · Multimedia Communications</h3><p>Arena Multimedia · Vietnam</p><small>Distinction</small></article>
+        <article class="reveal"><span>2023</span><h3>BA · International Economics</h3><p>Foreign Trade University · Vietnam</p><small>Distinction</small></article>
       </div>
       <p class="privacy-note reveal">A public résumé PDF will be added after phone and address details are reviewed for privacy.</p>
     </section>
