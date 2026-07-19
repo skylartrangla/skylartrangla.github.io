@@ -2,7 +2,7 @@ const page = document.body.dataset.page || "home";
 
 const navItems = [
   ["home", "Home", "/"],
-  ["digital-twin", "3D Programming", "/digital-twin/"],
+  ["digital-twin", "Programming & System", "/digital-twin/"],
   ["3d-generalist", "3D Generalist", "/3d-generalist/"],
   ["ui-ux", "UI/UX", "/ui-ux/"],
   ["research", "Research", "/research/"],
