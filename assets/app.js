@@ -128,7 +128,7 @@ const footer = () => `
       <a href="https://github.com/skylartrangla" target="_blank" rel="noreferrer">GitHub ${icons.arrow}</a>
       <a href="https://www.linkedin.com/in/skylar-trang-la/" target="_blank" rel="noreferrer">LinkedIn ${icons.arrow}</a>
     </div>
-    <p class="copyright">© ${new Date().getFullYear()} Skylar Trang La · Designed & coded from scratch</p>
+    <p class="copyright">© ${new Date().getFullYear()} Skylar Trang La · 3D Generalist · Digital Twin Developer · Gaming & AR Developer · Visualization Researcher</p>
   </footer>`;
 
 const home = () => `
