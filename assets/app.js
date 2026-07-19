@@ -54,7 +54,7 @@ const threeDProjects = [
     number: "01",
     title: "Still-Life Look Development",
     kicker: "LOOK DEVELOPMENT · RENDERING & SHADING",
-    description: "Still-life look development created as the final project for the Rendering & Shading class taught by Caleb Kicklighter and Jeff Nichols from DreamWorks Animation. Models were provided by the instructors; I developed the materials, lighting, mesh optimization and final presentation.",
+    description: "Still-life look development created as the final project for the Rendering & Shading class taught by Caleb Kicklighter and Jeff Nichols from DreamWorks Animation. Models were provided by the instructors; I developed the materials, lighting, mesh optimization, and final presentation.",
     tags: ["Substance 3D Painter", "Maya", "RenderMan", "Look development"],
     images: [
       ["/assets/3d/01-lookdev-final.webp", "Final warmly lit composition of the still-life scene"],
@@ -126,7 +126,7 @@ const footer = () => `
     <div class="footer-links">
       <a href="mailto:lathuytrang.ftu@gmail.com">lathuytrang.ftu@gmail.com ${icons.arrow}</a>
       <a href="https://github.com/skylartrangla" target="_blank" rel="noreferrer">GitHub ${icons.arrow}</a>
-      <a href="https://https://www.linkedin.com/in/skylar-trang-la//" target="_blank" rel="noreferrer">LinkedIn ${icons.arrow}</a>
+      <a href="https://www.linkedin.com/in/skylar-trang-la/" target="_blank" rel="noreferrer">LinkedIn ${icons.arrow}</a>
     </div>
     <p class="copyright">© ${new Date().getFullYear()} Skylar Trang La · Designed & coded from scratch</p>
   </footer>`;
@@ -175,7 +175,7 @@ const home = () => `
           <div><p class="project-kicker">DIGITAL TWIN · UX/UI</p><h3>Connected mobility simulation</h3><p>Cesium geospatial context, Unreal Mass AI crowds, and an in-vehicle interface prototype.</p><a class="text-link" href="/digital-twin/#mobility">See project <span>→</span></a></div>
         </article>
         <article class="project-card reveal">
-          ${projectVisual("ar", "Augmented reality coursework", "03")}
+          ${projectCover("/assets/covers/ar-projects.webp", "Three Unity augmented reality projects")}
           <div><p class="project-kicker">AR · UNITY · PHOTOGRAMMETRY</p><h3>Augmented reality studies</h3><p>Three coded AR experiences exploring interaction, spatial composition, and scanned assets.</p><a class="text-link" href="/digital-twin/#ar">See project <span>→</span></a></div>
         </article>
       </div>
@@ -203,18 +203,18 @@ const digitalTwin = () => `
       <div class="page-hero-aside reveal"><p>I prototype real-time systems where data, simulation, 3D environments, and human decisions meet.</p>${tagList(["Unreal Engine / Blueprints Visual Scripting", "Unity / C#", "MQTT / JSON", "Cesium", "Mass AI", "Maya", "Substance Painter"])}</div>
     </section>
     <section class="case-study" id="livestock">
-      ${projectCover("/assets/covers/digital-twin.webp", "BovineTwin sustainable livestock digital twin cover", "case-cover")}
+      ${projectCover("/assets/covers/digital-twin-2.webp", "BovineTwin digital twin development process", "case-cover")}
       <div class="case-layout">
-        <aside class="case-meta reveal"><p>ROLE</p><strong>Graduate Research Assistant<br>Digital Twin Developer</strong><p>CONTEXT</p><strong>AI for Sustainable Livestock System Lab<br>Texas A&M University</strong><p>STATUS</p><strong>Research in progress · 2025 - Present</strong></aside>
+        <aside class="case-meta reveal"><p>ROLE</p><strong>Graduate Research Assistant<br>Digital Twin Developer</strong><p>CONTEXT</p><strong>AI for Sustainable Livestock System Lab<br>Texas A&M University</strong><p>STATUS</p><strong>Research in progress · 2025—Present</strong></aside>
         <article class="case-copy reveal"><p class="eyebrow">CASE STUDY 01</p><h2>Making methane-energy partitioning visible by animal.</h2><p class="lead">BovineTwin combines an individual-level Mesa agent-based model with an interactive Unreal Engine 5.4 feedlot interface.</p><h3>The challenge</h3><p>Herd averages hide which animals drive methane-associated energy loss. The framework calibrates animal-level models and makes individual trajectories and mitigation scenarios inspectable in 3D.</p><h3>My contribution</h3><p>As a shared first author, I contributed conceptualization, methodology, software, data curation, visualization, investigation, writing, supervision, and project administration. I created 3D assets and developed the Unreal Engine interface and the target MQTT–JSON architecture. In this proof of concept, model outputs were transferred through CSV and Unreal DataTables; operational live-sensor validation is future work.</p><div class="process-row"><span>CALIBRATE<small>Individual records</small></span><b>→</b><span>SIMULATE<small>Mesa · Python</small></span><b>→</b><span>VISUALIZE<small>Unreal Engine 5.4</small></span><b>→</b><span>COMPARE<small>Mitigation scenarios</small></span></div>${tagList(["Unreal Engine 5.4", "Mesa / Python", "MQTT / JSON architecture", "CSV / DataTables", "3D Visualization"])}</article>
       </div>
     </section>
     <section class="case-study compact" id="mobility">
-      ${projectCover("/assets/covers/endeavr.webp", "ENDEAVR connected mobility digital twin cover", "case-cover")}
+      ${projectCover("/assets/covers/endeavr-2.webp", "ENDEAVR connected mobility and automotive interface work", "case-cover")}
       <div class="case-layout"><aside class="case-meta reveal"><p>ROLE</p><strong>Digital Design Intern</strong><p>ORGANIZATION</p><strong>ENDEAVR Institute</strong><p>YEAR</p><strong>2025</strong></aside><article class="case-copy reveal"><p class="eyebrow">CASE STUDY 02</p><h2>Connected mobility, from landscape to interface.</h2><p class="lead">An interactive prototype pairing geospatial context and crowd simulation with a three-mode in-vehicle UX concept.</p><p>I imported Google Earth data through Cesium, drew custom movement paths, and simulated crowds with Unreal Mass AI. In parallel, I translated technical requirements into wireframes for Self-driving, AI Training, and AI Driving modes, supported by a cohesive visual language.</p>${tagList(["Unreal Engine", "Cesium", "Mass AI", "UX/UI", "Crowd simulation"])}</article></div>
     </section>
     <section class="case-study compact" id="ar">
-      <div class="case-layout"><aside class="case-meta reveal"><p>FORMAT</p><strong>Three coded assignments</strong><p>FOCUS</p><strong>AR interaction & spatial storytelling</strong><p>MEDIA</p><strong>Three project game</strong></aside><article class="case-copy reveal"><p class="eyebrow">PROJECT COLLECTION 03</p><h2>Augmented reality studies.</h2><p class="lead">A three-part Unity series investigating how digital content can respond to real-world space.</p><p>I programmed the experiences in C# using Unity. The third assignment extends the pipeline with objects captured through photogrammetry, combining asset acquisition, optimization, interaction, and presentation.</p>${tagList(["Unity", "C#", "AR", "Photogrammetry", "Spatial interaction"])}</article></div>
+      <div class="case-layout"><aside class="case-meta reveal"><p>FORMAT</p><strong>Three coded assignments</strong><p>FOCUS</p><strong>AR interaction & spatial storytelling</strong><p>MEDIA</p><strong>Three game projects</strong></aside><article class="case-copy reveal"><p class="eyebrow">PROJECT COLLECTION 03</p><h2>Augmented reality studies.</h2><p class="lead">A three-part Unity series investigating how digital content can respond to real-world space.</p><p>I programmed the experiences in C# using Unity. The third assignment extends the pipeline with objects captured through photogrammetry, combining asset acquisition, optimization, interaction, and presentation.</p>${tagList(["Unity", "C#", "AR", "Photogrammetry", "Spatial interaction"])}</article></div>
       <div class="project-video-grid">
         ${videoCard("MfyWqeeUMc8", "TowAR", "3D AR · UNITY · C#")}
         ${videoCard("lXWZT_A-ezY", "MushJump", "3D AR · UNITY · C#")}
@@ -234,17 +234,17 @@ const generalist = () => `
   <main>
     <section class="page-hero generalist-hero">
       <div class="reveal"><p class="eyebrow">SPECIALIST PORTFOLIO / DIRECT LINK</p><h1>3D<br><em>Generalist</em></h1></div>
-      <div class="page-hero-aside reveal"><p>Gaming and animation environmental assets, built with a full understanding of modelling, UV unwrapping, look development, optimization, and the 3D production pipeline.</p>${tagList(["Unreal Engine", "Maya", "Substance 3D Painter", "3ds Max", "Renderman", "XGen", "Adobe"])}</div>
+      <div class="page-hero-aside reveal"><p>Gaming and animation environmental assets, built with a full understanding of modeling, UV unwrapping, look development, optimization, and the 3D production pipeline.</p>${tagList(["Unreal Engine", "Maya", "Substance 3D Painter", "3ds Max", "RenderMan", "XGen", "Adobe"])}</div>
     </section>
     <section class="section generalist-films">
       <div class="section-heading reveal"><p class="eyebrow">3D GENERALIST FILMS</p><h2>Environment, asset,<br><em>and motion craft.</em></h2></div>
-      <p class="section-intro reveal">Animation, layout, motion-capture, environment, and asset-turntable work - Separated here from the programming and AR films shown in Digital Twin & Interactive.</p>
+      <p class="section-intro reveal">Animation, layout, motion-capture, environment, and asset-turntable work—separated here from the programming and AR films shown in Digital Twin & Interactive.</p>
       <div class="project-video-grid">
         ${videoCard("Iomz45cYaFY", "The Guangdong Lion Dance", "SOLO CREATOR · MAYA · XGEN · SUBSTANCE PAINTER · UNREAL ENGINE · QUICK MAGIC AI · UNITY")}
         ${videoCard("GVcU2PL8bAs", "Shell You Be Mine?", "LAYOUT ARTIST · UNREAL ENGINE")}
         ${videoCard("0BbA_Cn4XRs", "Arrogance vs. Accuracy", "SOLO CREATOR · MOTIONBUILDER · MAYA · UNREAL ENGINE")}
         ${videoCard("qLj_8T69-k8", "Arctic Appetite", "ENVIRONMENT MODELER AND LAYOUT ARTIST · MAYA · SUBSTANCE PAINTER · ADOBE PREMIERE PRO")}
-        ${videoCard("mR1aZ-ybPnw", "The Seal & The Orcas", "ANIMATOR AND COMPOSITION DESIGNER · MAYA  · ADOBE PREMIERE PRO")}
+        ${videoCard("mR1aZ-ybPnw", "The Seal & The Orcas", "ANIMATOR AND COMPOSITION DESIGNER · MAYA · ADOBE PREMIERE PRO")}
       </div>
       <a class="text-link film-playlist-link" href="https://www.youtube.com/playlist?list=PL1tX9HxUBcES6xAiVwDfSMVhmwTR33M7Z" target="_blank" rel="noreferrer">Open full YouTube playlist <span>↗</span></a>
     </section>
@@ -303,7 +303,7 @@ const research = () => `
   <main>
     <section class="page-hero research-hero">
       <div class="reveal"><p class="eyebrow">RESEARCH PRACTICE / 04</p><h1>Research<br><em>& Publications</em></h1></div>
-      <div class="page-hero-aside reveal"><p>I study how real-time 3D visualization and digital twins can be applied in interdisciplinary areas to support humans' lives.</p>${tagList(["Digital twins", "Visualization", "3D", "Simulation", "Applied science"])}</div>
+      <div class="page-hero-aside reveal"><p>I study how real-time 3D visualization and digital twins can be applied across disciplines to support and improve people's lives.</p>${tagList(["Digital twins", "Visualization", "3D", "Simulation", "Applied science"])}</div>
     </section>
     <section class="section publication-list">
       <article class="publication featured-publication reveal">
@@ -325,7 +325,7 @@ const about = () => `
     </section>
     <section class="section about-layout">
       ${projectCover("/images/Portrait.JPG", "Portrait of Skylar La", "portrait-cover reveal")}
-      <div class="about-copy reveal"><p class="eyebrow">ABOUT</p><h2>I translate between<br><em>technical and visual worlds.</em></h2><p class="lead">My path through economics, multimedia, and visualization shaped a practice that combines analytical thinking with hands-on production.</p><p>I hold a Master of Science in Visualization from Texas A&M University, an Advanced Diploma in Multimedia Communications from Arena Multimedia, and a Bachelor’s degree in International Economics from Foreign Trade University. My work experience spans research laboratories, AR production, and university teaching related to 3D field.</p><p>I am particularly interested in digital twin and real-time visualization roles, followed by applied visualization research and focused 3D Generalist opportunities.</p></div>
+      <div class="about-copy reveal"><p class="eyebrow">ABOUT</p><h2>I translate between<br><em>technical and visual worlds.</em></h2><p class="lead">My path through economics, multimedia, and visualization shaped a practice that combines analytical thinking with hands-on production.</p><p>I hold a Master of Science in Visualization from Texas A&M University, an Advanced Diploma in Multimedia Communications from Arena Multimedia, and a bachelor’s degree in International Economics from Foreign Trade University. My work experience spans research laboratories, AR production, and university teaching related to the 3D field.</p><p>I am particularly interested in digital twin and real-time visualization roles, followed by applied visualization research and focused 3D Generalist opportunities.</p></div>
     </section>
     <section class="section resume-section">
       <div class="section-heading reveal"><p class="eyebrow">01 / EXPERIENCE</p><h2>Selected<br><em>experience.</em></h2></div>
