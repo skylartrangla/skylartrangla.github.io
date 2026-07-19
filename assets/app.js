@@ -136,8 +136,8 @@ const home = () => `
     <section class="hero home-hero">
       <div class="hero-copy reveal">
         <p class="eyebrow">DIGITAL TWIN DEVELOPER · VISUALIZATION RESEARCHER · 3D GENERALIST</p>
-        <h1>I see<br>that <em>the whole system.</em></h1>
-        <p class="hero-summary">My multidisciplinary background allows me to approach projects from four connected perspectives—from strategic reasoning and research to technical development and visual execution.</p>
+        <h1>I see<br>the whole system.</em></h1>
+        <p class="hero-summary">My multidisciplinary background allows me to approach projects from four connected perspectives: strategic reasoning and research to technical development and visual execution.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="/digital-twin/">Explore digital twin work ${icons.arrow}</a>
           <a class="text-link" href="/3d-generalist/">View 3D portfolio <span>→</span></a>
