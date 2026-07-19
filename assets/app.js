@@ -147,8 +147,7 @@ const home = () => `
         <div class="system-orbit orbit-one"></div><div class="system-orbit orbit-two"></div>
         <div class="system-node node-a">VISUALIZE<small>3D GENERALIST</small></div>
         <div class="system-node node-b">BUILD<small>DEVELOPER</small></div>
-        <div class="system-node node-c">THINK<small>ECONOMIST</small></div>
-        <div class="system-node node-d">INVESTIGATE<small>RESEARCHER</small></div>
+        <div class="system-node node-c">INVESTIGATE<small>RESEARCHER</small></div>
         <div class="system-readout"><span>SYNC</span><b>24 FPS</b><i></i></div>
       </div>
       <div class="scroll-cue"><span></span>Scroll to selected work</div>
