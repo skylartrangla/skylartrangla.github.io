@@ -118,7 +118,7 @@ const header = () => `
   </header>`;
 
 const footer = () => `
-  <footer class="site-footer">
+  <footer class="site-footer" id="contact">
     <div>
       <p class="eyebrow">OPEN TO OPPORTUNITIES · VIETNAM</p>
       <h2>Let’s build something<br><em>that behaves.</em></h2>
@@ -321,7 +321,7 @@ const about = () => `
   <main>
     <section class="page-hero about-hero">
       <div class="reveal"><p class="eyebrow">PROFILE / 05</p><h1>Skylar<br><em>Trang La</em></h1></div>
-      <div class="page-hero-aside reveal"><p>A visualization researcher and developer working across simulation, real-time 3D, and design. Now open to opportunities throughout Vietnam.</p><a class="button button-primary" href="mailto:lathuytrang.ftu@gmail.com?subject=Portfolio%20inquiry">Contact me ${icons.arrow}</a></div>
+      <div class="page-hero-aside reveal"><p>A visualization researcher and developer working across simulation, real-time 3D, and design. Now open to opportunities throughout Vietnam.</p><a class="button button-primary" href="#contact">Contact me <span aria-hidden="true">↓</span></a></div>
     </section>
     <section class="section about-layout">
       ${projectCover("/images/Portrait.JPG", "Portrait of Skylar La", "portrait-cover reveal")}
