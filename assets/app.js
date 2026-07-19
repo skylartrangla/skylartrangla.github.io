@@ -105,9 +105,9 @@ const assetStudies = [
 
 const header = () => `
   <header class="site-header">
-    <a class="brand" href="/" aria-label="Skylar La, home">
+    <a class="brand" href="/" aria-label="Skylar Trang La, home">
       <span class="brand-mark">SL</span>
-      <span>Skylar La<small>Digital Twin · Visualization</small></span>
+      <span>Skylar Trang La<small>Digital Twin · Visualization</small></span>
     </a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span><em>Menu</em>
@@ -128,7 +128,7 @@ const footer = () => `
       <a href="https://github.com/skylartrangla" target="_blank" rel="noreferrer">GitHub ${icons.arrow}</a>
       <a href="https://lathuytrang16.myportfolio.com/" target="_blank" rel="noreferrer">Archive portfolio ${icons.arrow}</a>
     </div>
-    <p class="copyright">© ${new Date().getFullYear()} Skylar La · Designed & coded from scratch</p>
+    <p class="copyright">© ${new Date().getFullYear()} Skylar Trang La · Designed & coded from scratch</p>
   </footer>`;
 
 const home = () => `
