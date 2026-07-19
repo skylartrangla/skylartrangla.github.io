@@ -1,6 +1,6 @@
-# Skylar La — Portfolio
+# Skylar La - Portfolio
 
-A hand-coded, responsive portfolio for digital twin development, visualization research, interactive systems, and 3D production.
+A responsive portfolio for digital twin development, visualization research, interactive systems, and 3D production.
 
 ## Architecture
 
