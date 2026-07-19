@@ -250,7 +250,7 @@ const generalist = () => `
       <a class="text-link film-playlist-link" href="https://www.youtube.com/playlist?list=PL1tX9HxUBcES6xAiVwDfSMVhmwTR33M7Z" target="_blank" rel="noreferrer">Open full YouTube playlist <span>↗</span></a>
     </section>
     <section class="section production-pipeline">
-      <div class="section-heading reveal"><p class="eyebrow">01 / PRODUCTION PIPELINE</p><h2>From blockout<br><em>to real time.</em></h2></div>
+      <div class="section-heading reveal"><p class="eyebrow">01 / PRODUCTION PIPELINE</p><h2>From blockout<br><em>to production-ready 3D.</em></h2></div>
       <div class="pipeline-grid">
         ${[
           ["MODEL", "Maya · 3ds Max · Blender", "Hard-surface and organic modeling from reference or real-world imagery."],
