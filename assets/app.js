@@ -347,7 +347,7 @@ const about = () => `
       </div>
       <div class="privacy-note reveal">
         <p>Download my two-page résumé for a concise overview of my experience, research, technical skills, education, and selected recognition.</p>
-        <a class="button button-primary" href="/assets/resume/Skylar-Trang-La-Resume.pdf" target="_blank" rel="noreferrer">View résumé PDF ${icons.arrow}</a>
+        <a class="button button-primary" href="/assets/resume/Skylar Trang La Resume.pdf" target="_blank" rel="noreferrer">View résumé PDF ${icons.arrow}</a>
       </div>
     </section>
   </main>`;
