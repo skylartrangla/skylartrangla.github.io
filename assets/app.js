@@ -339,7 +339,7 @@ const about = () => `
       </div>
     </section>
     <section class="section education-section">
-      <div class="section-heading reveal"><p class="eyebrow">02 / EDUCATION & RECOGNITION</p><h2>Three disciplines.<br><em>One perspective.</em></h2></div>
+      <div class="section-heading reveal"><p class="eyebrow">02 / EDUCATION & RECOGNITION</p><h2>Four disciplines.<br><em>One perspective.</em></h2></div>
       <div class="education-grid">
         <article class="reveal"><span>2025</span><h3>MS · Visualization</h3><p>Texas A&M University · USA</p><small>GPR 3.86 · Distinguished Student Award</small></article>
         <article class="reveal"><span>2023</span><h3>Advanced Diploma · Multimedia Communications</h3><p>Arena Multimedia · Vietnam</p><small>Distinction</small></article>
