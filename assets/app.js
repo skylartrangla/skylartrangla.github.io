@@ -100,7 +100,7 @@ const assetStudies = [
   ["05", "Big-Headed Monk Mask / Dai Tou Fut", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance · Maya · Substance 3D Painter.", "/assets/3d/05-mask-01.webp", "/assets/3d/05-mask-02.webp"],
   ["06", "Lion Dance Drum (Da Shi Gu 大狮鼓)", "Illustrated prop for my master's capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/06-drum-01.webp", "/assets/3d/06-drum-02.webp"],
   ["07", "Gong and Mallet", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/07-gong-01.webp", "/assets/3d/07-gong-02.webp"],
-  ["08", "Foshan Lion Head", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/images/8.png"],
+  ["08", "Foshan Lion Head", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/images/8.0.png"],
   ["09", "Lamppost", "Model created for a 3D Modeling class. Stylized art style · 3ds Max.", "/assets/3d/08-lantern-01.webp", "/assets/3d/08-lantern-02.webp"],
 ];
 
