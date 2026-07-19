@@ -54,7 +54,7 @@ const threeDProjects = [
     number: "01",
     title: "Still-Life Look Development",
     kicker: "LOOK DEVELOPMENT · RENDERING & SHADING",
-    description: "Still-life look development created as the final project for the Rendering & Shading class taught by Caleb Kicklighter and Jeff Nichols. Models were provided by the instructors; I developed the materials, lighting, and final presentation.",
+    description: "Still-life look development created as the final project for the Rendering & Shading class taught by Caleb Kicklighter and Jeff Nichols from DreamWorks Animation. Models were provided by the instructors; I developed the materials, lighting, mesh optimization and final presentation.",
     tags: ["Substance 3D Painter", "Maya", "RenderMan", "Look development"],
     images: [
       ["/assets/3d/01-lookdev-final.webp", "Final warmly lit composition of the still-life scene"],
@@ -98,7 +98,7 @@ const threeDProjects = [
 const assetStudies = [
   ["04", "Duckbill Ground Clamp", "Model for a factory-safety AR game created during my VRTech internship. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/04-can-opener-01.webp", "/assets/3d/04-can-opener-02.webp"],
   ["05", "Big-Headed Monk Mask / Dai Tou Fut", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance · Maya · Substance 3D Painter.", "/assets/3d/05-mask-01.webp", "/assets/3d/05-mask-02.webp"],
-  ["06", "Lion Dance Drum (Da Shi Gu 大狮鼓)", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/06-drum-01.webp", "/assets/3d/06-drum-02.webp"],
+  ["06", "Lion Dance Drum (Da Shi Gu 大狮鼓)", "Illustrated prop for my master's capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/06-drum-01.webp", "/assets/3d/06-drum-02.webp"],
   ["07", "Gong and Mallet", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/07-gong-01.webp", "/assets/3d/07-gong-02.webp"],
   ["08", "Lamppost", "Model created for a 3D Modeling class. Stylized art style · 3ds Max.", "/assets/3d/08-lantern-01.webp", "/assets/3d/08-lantern-02.webp"],
 ];
@@ -256,7 +256,7 @@ const generalist = () => `
           ["SCULPT + UV", "ZBrush · Maya", "High-resolution form development, retopology, UV remapping, and asset preparation."],
           ["TEXTURE", "Substance 3D Painter", "Material definition and PBR texture production for believable surfaces."],
           ["RIG + ANIMATE", "Maya · MotionBuilder", "Rigging, skin weighting, keyframe animation, and motion-capture workflows."],
-          ["ASSEMBLE", "Unreal Engine", "Environment composition, lighting, interaction, optimization, and presentation."],
+          ["ASSEMBLE", "Unreal Engine", "Environment composition, lighting, layout, interaction, optimization, and presentation."],
         ].map(([title, tools, desc], i) => `<article class="pipeline-card reveal"><span>0${i + 1}</span><h3>${title}</h3><strong>${tools}</strong><p>${desc}</p></article>`).join("")}
       </div>
     </section>
