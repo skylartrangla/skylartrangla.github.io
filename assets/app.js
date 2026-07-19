@@ -124,9 +124,9 @@ const footer = () => `
       <h2>Let’s build something<br><em>that behaves.</em></h2>
     </div>
     <div class="footer-links">
-      <a href="mailto:lathuytrang16@tamu.edu">lathuytrang16@tamu.edu ${icons.arrow}</a>
+      <a href="mailto:lathuytrang.ftu@gmail.com">lathuytrang.ftu@gmail.com ${icons.arrow}</a>
       <a href="https://github.com/skylartrangla" target="_blank" rel="noreferrer">GitHub ${icons.arrow}</a>
-      <a href="https://lathuytrang16.myportfolio.com/" target="_blank" rel="noreferrer">Archive portfolio ${icons.arrow}</a>
+      <a href="https://https://www.linkedin.com/in/skylar-trang-la//" target="_blank" rel="noreferrer">LinkedIn ${icons.arrow}</a>
     </div>
     <p class="copyright">© ${new Date().getFullYear()} Skylar Trang La · Designed & coded from scratch</p>
   </footer>`;
@@ -234,17 +234,17 @@ const generalist = () => `
   <main>
     <section class="page-hero generalist-hero">
       <div class="reveal"><p class="eyebrow">SPECIALIST PORTFOLIO / DIRECT LINK</p><h1>3D<br><em>Generalist</em></h1></div>
-      <div class="page-hero-aside reveal"><p>Real-time-ready environments and assets, built with a full understanding of look development, topology, optimization, and the 3D production pipeline.</p>${tagList(["Unreal Engine", "Maya", "Substance 3D Painter", "Hard-surface", "Look development", "Blueprints"])}</div>
+      <div class="page-hero-aside reveal"><p>Gaming and animation environmental assets, built with a full understanding of modelling, UV unwrapping, look development, optimization, and the 3D production pipeline.</p>${tagList(["Unreal Engine", "Maya", "Substance 3D Painter", "3ds Max", "Renderman", "XGen", "Adobe"])}</div>
     </section>
     <section class="section generalist-films">
       <div class="section-heading reveal"><p class="eyebrow">3D GENERALIST FILMS</p><h2>Environment, asset,<br><em>and motion craft.</em></h2></div>
-      <p class="section-intro reveal">Animation, layout, motion-capture, environment, and asset-turntable work—separated here from the programming and AR films shown in Digital Twin & Interactive.</p>
+      <p class="section-intro reveal">Animation, layout, motion-capture, environment, and asset-turntable work - Separated here from the programming and AR films shown in Digital Twin & Interactive.</p>
       <div class="project-video-grid">
-        ${videoCard("Iomz45cYaFY", "The Guangdong Lion Dance", "SOLE CREATOR · MAYA · SUBSTANCE · UNREAL ENGINE")}
+        ${videoCard("Iomz45cYaFY", "The Guangdong Lion Dance", "SOLO CREATOR · MAYA · XGEN · SUBSTANCE PAINTER · UNREAL ENGINE · QUICK MAGIC AI · UNITY")}
         ${videoCard("GVcU2PL8bAs", "Shell You Be Mine?", "LAYOUT ARTIST · UNREAL ENGINE")}
-        ${videoCard("0BbA_Cn4XRs", "Arrogance vs. Accuracy", "MOTION CAPTURE · ANIMATION · LIGHTING")}
-        ${videoCard("qLj_8T69-k8", "Arctic Appetite", "ENVIRONMENT MODELING · LAYOUT · 36-HOUR TEAM PROJECT")}
-        ${videoCard("mR1aZ-ybPnw", "The Seal & The Orcas", "ANIMATOR · COMPOSITION DESIGN")}
+        ${videoCard("0BbA_Cn4XRs", "Arrogance vs. Accuracy", "SOLO CREATOR · MOTIONBUILDER · MAYA · UNREAL ENGINE")}
+        ${videoCard("qLj_8T69-k8", "Arctic Appetite", "ENVIRONMENT MODELER AND LAYOUT ARTIST · MAYA · SUBSTANCE PAINTER · ADOBE PREMIERE PRO")}
+        ${videoCard("mR1aZ-ybPnw", "The Seal & The Orcas", "ANIMATOR AND COMPOSITION DESIGNER · MAYA  · ADOBE PREMIERE PRO")}
       </div>
       <a class="text-link film-playlist-link" href="https://www.youtube.com/playlist?list=PL1tX9HxUBcES6xAiVwDfSMVhmwTR33M7Z" target="_blank" rel="noreferrer">Open full YouTube playlist <span>↗</span></a>
     </section>
@@ -303,7 +303,7 @@ const research = () => `
   <main>
     <section class="page-hero research-hero">
       <div class="reveal"><p class="eyebrow">RESEARCH PRACTICE / 04</p><h1>Research<br><em>& Publications</em></h1></div>
-      <div class="page-hero-aside reveal"><p>I study how real-time visualization and digital twins can make scientific systems more legible and actionable.</p>${tagList(["Digital twins", "Visual analytics", "Sustainability", "Simulation", "Technical writing"])}</div>
+      <div class="page-hero-aside reveal"><p>I study how real-time 3D visualization and digital twins can be applied in interdisciplinary areas to support humans' lives.</p>${tagList(["Digital twins", "Visualization", "3D", "Simulation", "Applied science"])}</div>
     </section>
     <section class="section publication-list">
       <article class="publication featured-publication reveal">
@@ -321,7 +321,7 @@ const about = () => `
   <main>
     <section class="page-hero about-hero">
       <div class="reveal"><p class="eyebrow">PROFILE / 05</p><h1>Skylar<br><em>Trang La</em></h1></div>
-      <div class="page-hero-aside reveal"><p>A visualization researcher and developer working across simulation, real-time 3D, and design. Now open to opportunities throughout Vietnam.</p><a class="button button-primary" href="mailto:lathuytrang16@tamu.edu?subject=Portfolio%20inquiry">Contact me ${icons.arrow}</a></div>
+      <div class="page-hero-aside reveal"><p>A visualization researcher and developer working across simulation, real-time 3D, and design. Now open to opportunities throughout Vietnam.</p><a class="button button-primary" href="mailto:lathuytrang.ftu@gmail.com?subject=Portfolio%20inquiry">Contact me ${icons.arrow}</a></div>
     </section>
     <section class="section about-layout">
       ${projectCover("/images/Portrait.JPG", "Portrait of Skylar La", "portrait-cover reveal")}
