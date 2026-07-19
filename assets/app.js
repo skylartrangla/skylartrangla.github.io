@@ -344,6 +344,7 @@ const about = () => `
         <article class="reveal"><span>2025</span><h3>MS · Visualization</h3><p>Texas A&M University · USA</p><small>GPR 3.86 · Distinguished Student Award</small></article>
         <article class="reveal"><span>2023</span><h3>Advanced Diploma · Multimedia Communications</h3><p>Arena Multimedia · Vietnam</p><small>Distinction</small></article>
         <article class="reveal"><span>2023</span><h3>BA · International Economics</h3><p>Foreign Trade University · Vietnam</p><small>Distinction</small></article>
+        <article class="reveal"><span>2025</span><h3>IELTS Academic — Overall 7.5 · CEFR C1</h3><p>Listening 8.5 · Reading 8.5 · Writing 6.5 · Speaking 6.5</p><small>Tested 09 August 2025<br>Full official report available upon request.</small></article>
       </div>
       <div class="privacy-note reveal">
         <p>Download my two-page résumé for a concise overview of my experience, research, technical skills, education, and selected recognition.</p>
