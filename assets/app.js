@@ -219,6 +219,7 @@ const digitalTwin = () => `
         ${videoCard("MfyWqeeUMc8", "TowAR", "3D AR · UNITY · C#")}
         ${videoCard("lXWZT_A-ezY", "MushJump", "3D AR · UNITY · C#")}
         ${videoCard("Nowm-IpWCnc", "WardAR", "3D AR · UNITY · C# · PHOTOGRAMMETRY")}
+        ${videoCard("NLfK4dp_hTE", "Guangdong Lion Dance", "3D AR · UNITY · C#")}
       </div>
     </section>
     <section class="section interactive-films">
