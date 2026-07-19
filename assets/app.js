@@ -136,7 +136,7 @@ const home = () => `
     <section class="hero home-hero">
       <div class="hero-copy reveal">
         <p class="eyebrow">DIGITAL TWIN DEVELOPER · VISUALIZATION RESEARCHER · 3D GENERALIST</p>
-        <h1>I see<br>the whole system.</em></h1>
+        <h1>I see<br><em>the whole system.</em></h1>
         <p class="hero-summary">My multidisciplinary background allows me to approach projects from four connected perspectives: strategic reasoning and research to technical development and visual execution.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="/digital-twin/">Explore digital twin work ${icons.arrow}</a>
@@ -145,10 +145,10 @@ const home = () => `
       </div>
       <div class="hero-system reveal" aria-label="Abstract real-time system visualization">
         <div class="system-orbit orbit-one"></div><div class="system-orbit orbit-two"></div>
-        <div class="system-node node-a">VISUALIZE<small>3D GENERALIST</small></div>
-        <div class="system-node node-b">BUILD<small>DEVELOPER</small></div>
-        <div class="system-node node-c">INVESTIGATE<small>RESEARCHER</small></div>
-        <div class="system-node node-d">THINK<small>ECONOMIST</small></div>
+        <div class="system-node node-a">THINK<small>ECONOMIST</small></div>
+        <div class="system-node node-b">INVESTIGATE<small>RESEARCHER</small></div>
+        <div class="system-node node-c">VISUALIZE<small>3D GENERALIST</small></div>
+        <div class="system-node node-d">BUILD<small>DEVELOPER</small></div>
       </div>
       <div class="scroll-cue"><span></span>Scroll to selected work</div>
     </section>
