@@ -182,7 +182,7 @@ const home = () => `
 
     <section class="section capability-band">
       <div class="section-heading reveal"><p class="eyebrow">02 / CAPABILITIES</p><h2>One practice.<br><em>Four outcomes.</em></h2></div>
-      <p class="section-intro reveal">Capabilities describe what I can deliver; projects are the evidence. Grouping by outcome keeps the portfolio clear even when tools—especially Unreal Engine—serve more than one discipline.</p>
+      <p class="section-intro reveal">Capabilities describe what I can deliver; projects are the evidence. Grouping by outcome keeps the portfolio clear even when tools serve more than one discipline.</p>
       <div class="capability-grid">
         ${[
           ["01", "Systems & Simulation", "Digital twins · real-time data · agent-based simulation · performance validation"],
