@@ -345,7 +345,10 @@ const about = () => `
         <article class="reveal"><span>2023</span><h3>Advanced Diploma · Multimedia Communications</h3><p>Arena Multimedia · Vietnam</p><small>Distinction</small></article>
         <article class="reveal"><span>2023</span><h3>BA · International Economics</h3><p>Foreign Trade University · Vietnam</p><small>Distinction</small></article>
       </div>
-      <p class="privacy-note reveal">A public résumé PDF will be added after phone and address details are reviewed for privacy.</p>
+      <div class="privacy-note reveal">
+        <p>Download my two-page résumé for a concise overview of my experience, research, technical skills, education, and selected recognition.</p>
+        <a class="button button-primary" href="/assets/resume/Skylar-Trang-La-Resume.pdf" target="_blank" rel="noreferrer">View résumé PDF ${icons.arrow}</a>
+      </div>
     </section>
   </main>`;
 
