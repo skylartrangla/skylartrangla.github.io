@@ -2,7 +2,7 @@ const page = document.body.dataset.page || "home";
 
 const navItems = [
   ["home", "Home", "/"],
-  ["digital-twin", "Programming & System", "/digital-twin/"],
+  ["digital-twin", "Programming & Systems", "/digital-twin/"],
   ["3d-generalist", "3D Generalist", "/3d-generalist/"],
   ["ui-ux", "UI/UX", "/ui-ux/"],
   ["research", "Research", "/research/"],
@@ -213,8 +213,15 @@ const digitalTwin = () => `
       ${projectCover("/assets/covers/endeavr-2.webp", "ENDEAVR connected mobility and automotive interface work", "case-cover")}
       <div class="case-layout"><aside class="case-meta reveal"><p>ROLE</p><strong>Digital Design Intern</strong><p>ORGANIZATION</p><strong>ENDEAVR Institute</strong><p>YEAR</p><strong>2025</strong></aside><article class="case-copy reveal"><p class="eyebrow">CASE STUDY 02</p><h2>Connected mobility, from landscape to interface.</h2><p class="lead">An interactive prototype pairing geospatial context and crowd simulation with a three-mode in-vehicle UX concept.</p><p>I imported Google Earth data through Cesium, drew custom movement paths, and simulated crowds with Unreal Mass AI. In parallel, I translated technical requirements into wireframes for Self-driving, AI Training, and AI Driving modes, supported by a cohesive visual language.</p>${tagList(["Unreal Engine", "Cesium", "Mass AI", "UX/UI", "Crowd simulation"])}</article></div>
     </section>
+    <section class="case-study compact" id="last-bus">
+      ${projectCover("/images/Last%20Bus%201.png", "Last Bus procedural Tokyo night scene interface", "case-cover")}
+      <div class="case-layout">
+        <aside class="case-meta reveal"><p>ROLE</p><strong>Creative Developer<br>3D Environment Designer</strong><p>TYPE</p><strong>Personal creative-coding project</strong><p>YEAR</p><strong>2026</strong></aside>
+        <article class="case-copy reveal"><p class="eyebrow">CASE STUDY 03</p><h2>Last Bus: a procedural Tokyo night scene.</h2><p class="lead">An interactive procedural 3D environment exploring how rain, fog, lighting, ambient sound, traffic, and time of night reshape the atmosphere of a Tokyo bus stop.</p><p>Built with Three.js, WebGL, and the Web Audio API, the experience lets users generate scene variations, explore the environment, and enter Photo Mode to compose and export their own frames.</p>${tagList(["Three.js", "WebGL", "Web Audio API", "JavaScript", "Procedural 3D"])}<a class="button button-primary" href="https://skylartrangla.github.io/tokyo.lastbus/" target="_blank" rel="noreferrer">Launch live experience ${icons.arrow}</a></article>
+      </div>
+    </section>
     <section class="case-study compact" id="ar">
-      <div class="case-layout"><aside class="case-meta reveal"><p>FORMAT</p><strong>Three coded assignments</strong><p>FOCUS</p><strong>AR interaction & spatial storytelling</strong><p>MEDIA</p><strong>Three game projects</strong></aside><article class="case-copy reveal"><p class="eyebrow">PROJECT COLLECTION 03</p><h2>Augmented reality studies.</h2><p class="lead">A three-part Unity series investigating how digital content can respond to real-world space.</p><p>I programmed the experiences in C# using Unity. The third assignment extends the pipeline with objects captured through photogrammetry, combining asset acquisition, optimization, interaction, and presentation.</p>${tagList(["Unity", "C#", "AR", "Photogrammetry", "Spatial interaction"])}</article></div>
+      <div class="case-layout"><aside class="case-meta reveal"><p>FORMAT</p><strong>Three coded assignments</strong><p>FOCUS</p><strong>AR interaction & spatial storytelling</strong><p>MEDIA</p><strong>Three game projects</strong></aside><article class="case-copy reveal"><p class="eyebrow">PROJECT COLLECTION 04</p><h2>Augmented reality studies.</h2><p class="lead">A three-part Unity series investigating how digital content can respond to real-world space.</p><p>I programmed the experiences in C# using Unity. The third assignment extends the pipeline with objects captured through photogrammetry, combining asset acquisition, optimization, interaction, and presentation.</p>${tagList(["Unity", "C#", "AR", "Photogrammetry", "Spatial interaction"])}</article></div>
       <div class="project-video-grid">
         ${videoCard("MfyWqeeUMc8", "TowAR", "3D AR · UNITY · C#")}
         ${videoCard("lXWZT_A-ezY", "MushJump", "3D AR · UNITY · C#")}
@@ -223,7 +230,7 @@ const digitalTwin = () => `
       </div>
     </section>
     <section class="section interactive-films">
-      <div class="section-heading reveal"><p class="eyebrow">04 / INTERACTIVE PROJECT FILMS</p><h2>Code-driven<br><em>worlds in motion.</em></h2></div>
+      <div class="section-heading reveal"><p class="eyebrow">05 / INTERACTIVE PROJECT FILMS</p><h2>Code-driven<br><em>worlds in motion.</em></h2></div>
       <div class="project-video-grid">
         ${videoCard("9jZooyXzVAA", "A Miraculous Jungle", "3D PROGRAMMING · HOUDINI · MAYA · UNREAL ENGINE")}
         ${videoCard("KQk7JzZaLH0", "SamSong", "2D & XR GAMING · LEADER · INTERACTIVE DEVELOPMENT")}
