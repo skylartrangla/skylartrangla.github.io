@@ -205,7 +205,7 @@ const digitalTwin = () => `
     <section class="case-study" id="livestock">
       ${projectCover("/assets/covers/digital-twin-2.webp", "BovineTwin digital twin development process", "case-cover")}
       <div class="case-layout">
-        <aside class="case-meta reveal"><p>ROLE</p><strong>Graduate Research Assistant<br>Digital Twin Developer</strong><p>CONTEXT</p><strong>AI for Sustainable Livestock System Lab<br>Texas A&M University</strong><p>STATUS</p><strong>Research in progress · 2025—Present</strong></aside>
+        <aside class="case-meta reveal"><p>ROLE</p><strong>Graduate Research Assistant<br>Digital Twin Developer</strong><p>CONTEXT</p><strong>AI for Sustainable Livestock System Lab<br>Texas A&M University</strong><p>STATUS</p><strong>Research in progress · 2025-Present</strong></aside>
         <article class="case-copy reveal"><p class="eyebrow">CASE STUDY 01</p><h2>Making methane-energy partitioning visible by animal.</h2><p class="lead">BovineTwin combines an individual-level Mesa agent-based model with an interactive Unreal Engine 5.4 feedlot interface.</p><h3>The challenge</h3><p>Herd averages hide which animals drive methane-associated energy loss. The framework calibrates animal-level models and makes individual trajectories and mitigation scenarios inspectable in 3D.</p><h3>My contribution</h3><p>As a shared first author, I contributed conceptualization, methodology, software, data curation, visualization, investigation, writing, supervision, and project administration. I created 3D assets and developed the Unreal Engine interface and the target MQTT–JSON architecture. In this proof of concept, model outputs were transferred through CSV and Unreal DataTables; operational live-sensor validation is future work.</p><div class="process-row"><span>CALIBRATE<small>Individual records</small></span><b>→</b><span>SIMULATE<small>Mesa · Python</small></span><b>→</b><span>VISUALIZE<small>Unreal Engine 5.4</small></span><b>→</b><span>COMPARE<small>Mitigation scenarios</small></span></div>${tagList(["Unreal Engine 5.4", "Mesa / Python", "MQTT / JSON architecture", "CSV / DataTables", "3D Visualization"])}</article>
       </div>
     </section>
@@ -246,7 +246,7 @@ const generalist = () => `
     </section>
     <section class="section generalist-films">
       <div class="section-heading reveal"><p class="eyebrow">3D GENERALIST FILMS</p><h2>Environment, asset,<br><em>and motion craft.</em></h2></div>
-      <p class="section-intro reveal">Animation, layout, motion-capture, environment, and asset-turntable work—separated here from the programming and AR films shown in Digital Twin & Interactive.</p>
+      <p class="section-intro reveal">Animation, layout, motion-capture, environment, and asset-turntable work-separated here from the programming and AR films shown in Digital Twin & Interactive.</p>
       <div class="project-video-grid">
         ${videoCard("Iomz45cYaFY", "The Guangdong Lion Dance", "SOLO CREATOR · MAYA · XGEN · SUBSTANCE PAINTER · UNREAL ENGINE · QUICK MAGIC AI · UNITY")}
         ${videoCard("GVcU2PL8bAs", "Shell You Be Mine?", "LAYOUT ARTIST · UNREAL ENGINE")}
@@ -339,8 +339,8 @@ const about = () => `
       <div class="section-heading reveal"><p class="eyebrow">01 / EXPERIENCE</p><h2>Selected<br><em>experience.</em></h2></div>
       <div class="timeline">
         ${[
-          ["2025—PRESENT", "Graduate Research Assistant", "AI for Sustainable Livestock System Lab · Texas A&M University · USA", "Real-time digital twin development, methane simulation visualization, performance benchmarking, research writing, and undergraduate mentorship."],
-          ["2023—2025", "Graduate Teaching Assistant", "Visualization Department · Texas A&M University · USA", "Instruction and course support across design, art history, and visual studies; specialized teaching in Unreal Engine, photogrammetry, and 3D principles."],
+          ["2025-PRESENT", "Graduate Research Assistant", "AI for Sustainable Livestock System Lab · Texas A&M University · USA", "Real-time digital twin development, methane simulation visualization, performance benchmarking, research writing, and undergraduate mentorship."],
+          ["2023-2025", "Graduate Teaching Assistant", "Visualization Department · Texas A&M University · USA", "Instruction and course support across design, art history, and visual studies; specialized teaching in Unreal Engine, photogrammetry, and 3D principles."],
           ["2025", "Digital Design Intern", "ENDEAVR Institute · USA", "Interactive mobility digital twin prototype, Unreal Engine crowd simulation, geospatial integration, and in-vehicle UX/UI."],
           ["2024", "3D Artist Intern", "VR Tech Company · Vietnam", "Modeling, texturing, rigging, skin weighting, animation, game testing, and technical localization."],
         ].map(([year, role, org, desc]) => `<article class="timeline-item reveal"><time>${year}</time><div><h3>${role}</h3><strong>${org}</strong><p>${desc}</p></div></article>`).join("")}
