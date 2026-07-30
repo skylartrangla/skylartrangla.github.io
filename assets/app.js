@@ -93,15 +93,28 @@ const threeDProjects = [
       ["/assets/3d/03-grinder-07.webp", "Vintage coffee grinder rear view"],
     ],
   },
+  {
+    number: "04",
+    title: "Blue Moon Mark 1 Lunar Lander",
+    kicker: "SPACE SIMULATION · HARD-SURFACE ASSET",
+    description: "Blue Moon Mark 1 Lunar Lander created for a NASA simulation application under the guidance of former NASA astronaut Dr. Gregory Chamitoff. I completed the asset's end-to-end 3D development—from high-poly modeling and UV unwrapping in Maya to low-poly optimization and layered PBR texturing in Substance 3D Painter, including custom MLI, plastic, aluminum, and thermal-blanket materials.",
+    tags: ["Maya", "Substance 3D Painter", "PBR texturing", "Mesh optimization"],
+    images: [
+      ["/assets/3d/09-mk1-render.webp", "Final rendered Blue Moon Mark 1 Lunar Lander"],
+      ["/assets/3d/09-mk1-mesh-1.webp", "Blue Moon Mark 1 Lunar Lander mesh overview"],
+      ["/assets/3d/09-mk1-mesh-2-1.webp", "Blue Moon Mark 1 Lunar Lander detailed mesh view one"],
+      ["/assets/3d/09-mk1-mesh-2-2.webp", "Blue Moon Mark 1 Lunar Lander detailed mesh view two"],
+    ],
+  },
 ];
 
 const assetStudies = [
-  ["04", "Duckbill Ground Clamp", "Model for a factory-safety AR game created during my VRTech internship. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/04-can-opener-01.webp", "/assets/3d/04-can-opener-02.webp"],
-  ["05", "Big-Headed Monk Mask / Dai Tou Fut", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance · Maya · Substance 3D Painter.", "/assets/3d/05-mask-01.webp", "/assets/3d/05-mask-02.webp"],
-  ["06", "Lion Dance Drum (Da Shi Gu 大狮鼓)", "Illustrated prop for my master's capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/06-drum-01.webp", "/assets/3d/06-drum-02.webp"],
-  ["07", "Gong and Mallet", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/07-gong-01.webp", "/assets/3d/07-gong-02.webp"],
-  ["08", "Foshan Lion Head", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/images/8.0.png"],
-  ["09", "Lamppost", "Model created for a 3D Modeling class. Stylized art style · 3ds Max.", "/assets/3d/08-lantern-01.webp", "/assets/3d/08-lantern-02.webp"],
+  ["05", "Duckbill Ground Clamp", "Model for a factory-safety AR game created during my VRTech internship. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/04-can-opener-01.webp", "/assets/3d/04-can-opener-02.webp"],
+  ["06", "Big-Headed Monk Mask / Dai Tou Fut", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance · Maya · Substance 3D Painter.", "/assets/3d/05-mask-01.webp", "/assets/3d/05-mask-02.webp"],
+  ["07", "Lion Dance Drum (Da Shi Gu 大狮鼓)", "Illustrated prop for my master's capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/06-drum-01.webp", "/assets/3d/06-drum-02.webp"],
+  ["08", "Gong and Mallet", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/assets/3d/07-gong-01.webp", "/assets/3d/07-gong-02.webp"],
+  ["09", "Foshan Lion Head", "Illustrated prop for my capstone research on using AR in the Guangdong Lion Dance. Realistic art style · Maya · Substance 3D Painter.", "/images/8.0.png"],
+  ["10", "Lamppost", "Model created for a 3D Modeling class. Stylized art style · 3ds Max.", "/assets/3d/08-lantern-01.webp", "/assets/3d/08-lantern-02.webp"],
 ];
 
 const header = () => `
@@ -171,8 +184,8 @@ const home = () => `
       </article>
       <div class="project-grid">
         <article class="project-card reveal">
-          ${projectCover("/assets/covers/endeavr.webp", "ENDEAVR connected mobility digital twin cover")}
-          <div><p class="project-kicker">DIGITAL TWIN · UX/UI</p><h3>Connected mobility simulation</h3><p>Cesium geospatial context, Unreal Mass AI crowds, and an in-vehicle interface prototype.</p><a class="text-link" href="/digital-twin/#mobility">See project <span>→</span></a></div>
+          ${projectCover("/assets/3d/01-lookdev-final.webp", "Final warmly lit Still-Life Look Development composition")}
+          <div><p class="project-kicker">LOOK DEVELOPMENT · RENDERING & SHADING</p><h3>Still-Life Look Development</h3><p>A complete look-development study focused on materials, lighting, mesh optimization, and final presentation.</p><a class="text-link" href="/3d-generalist/#project-01">See project <span>→</span></a></div>
         </article>
         <article class="project-card reveal">
           ${projectCover("/assets/covers/ar-projects.webp", "Three Unity augmented reality projects")}
