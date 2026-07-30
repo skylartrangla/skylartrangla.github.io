@@ -371,8 +371,8 @@ const about = () => `
       <div class="section-heading reveal"><p class="eyebrow">02 / EDUCATION & RECOGNITION</p><h2>Four disciplines.<br><em>One perspective.</em></h2></div>
       <div class="education-grid">
         <article class="reveal"><span>2025</span><h3>MS · Visualization</h3><p>Texas A&M University · USA</p><small>GPR 3.86 · Distinguished Student Award</small></article>
-        <article class="reveal"><span>2023</span><h3>Advanced Diploma · Multimedia Communications</h3><p>Arena Multimedia · Vietnam</p><small>Distinction</small></article>
         <article class="reveal"><span>2023</span><h3>BEcon · International Business Economics</h3><p>Foreign Trade University · Vietnam</p><small>Distinction</small></article>
+        <article class="reveal"><span>2023</span><h3>Advanced Diploma · Multimedia Communications</h3><p>Arena Multimedia · Vietnam</p><small>Distinction</small></article>
         <article class="reveal"><span>2025</span><h3>IELTS Academic</h3><p>Overall 7.5 · CEFR C1</p><small>Listening 8.5 · Reading 8.5 · Writing 6.5 · Speaking 6.5<br>Tested 09 August 2025</small></article>
       </div>
       <div class="privacy-note reveal">
