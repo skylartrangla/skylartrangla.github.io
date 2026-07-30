@@ -35,6 +35,11 @@ const optimizedCoverPaths = {
 const projectCover = (src, alt, className = "") => `
   <figure class="project-cover ${className}"><img src="${optimizedCoverPaths[src] || src}" alt="${alt}" loading="lazy" decoding="async"></figure>`;
 
+const projectTriptych = (images, label) => `
+  <figure class="project-cover project-cover-triptych" aria-label="${label}">
+    ${images.map(([src, alt]) => `<img src="${src}" alt="${alt}" loading="lazy" decoding="async">`).join("")}
+  </figure>`;
+
 const tagList = (items) => `<ul class="tag-list">${items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
 
 const galleryImage = (src, alt, className = "") => `
@@ -64,6 +69,19 @@ const threeDProjects = [
   },
   {
     number: "02",
+    title: "Blue Moon Mark 1 Lunar Lander",
+    kicker: "SPACE SIMULATION · HARD-SURFACE ASSET",
+    description: "Blue Moon Mark 1 Lunar Lander created for a NASA simulation application under the guidance of former NASA astronaut Dr. Gregory Chamitoff. I completed the asset's end-to-end 3D development—from high-poly modeling and UV unwrapping in Maya to low-poly optimization and layered PBR texturing in Substance 3D Painter, including custom MLI, plastic, aluminum, and thermal-blanket materials.",
+    tags: ["Maya", "Substance 3D Painter", "PBR texturing", "Mesh optimization"],
+    images: [
+      ["/assets/3d/09-mk1-render.webp", "Final rendered Blue Moon Mark 1 Lunar Lander"],
+      ["/assets/3d/09-mk1-mesh-1.webp", "Blue Moon Mark 1 Lunar Lander mesh overview"],
+      ["/assets/3d/09-mk1-mesh-2-1.webp", "Blue Moon Mark 1 Lunar Lander detailed mesh view one"],
+      ["/assets/3d/09-mk1-mesh-2-2.webp", "Blue Moon Mark 1 Lunar Lander detailed mesh view two"],
+    ],
+  },
+  {
+    number: "03",
     title: "Outdoor Messenger Bag",
     kicker: "REALISTIC TEXTURING · SCHOOL ASSIGNMENT",
     description: "Texturing for an Outdoor Messenger Bag created for a school assignment in a realistic art style.",
@@ -78,7 +96,7 @@ const threeDProjects = [
     ],
   },
   {
-    number: "03",
+    number: "04",
     title: "Coffee Grinder",
     kicker: "REALISTIC TEXTURING · SCHOOL ASSIGNMENT",
     description: "Texturing for a Coffee Grinder created for a school assignment in a realistic art style.",
@@ -91,19 +109,6 @@ const threeDProjects = [
       ["/assets/3d/03-grinder-05.webp", "Vintage coffee grinder side view"],
       ["/assets/3d/03-grinder-06.webp", "Vintage coffee grinder opposite side view"],
       ["/assets/3d/03-grinder-07.webp", "Vintage coffee grinder rear view"],
-    ],
-  },
-  {
-    number: "04",
-    title: "Blue Moon Mark 1 Lunar Lander",
-    kicker: "SPACE SIMULATION · HARD-SURFACE ASSET",
-    description: "Blue Moon Mark 1 Lunar Lander created for a NASA simulation application under the guidance of former NASA astronaut Dr. Gregory Chamitoff. I completed the asset's end-to-end 3D development—from high-poly modeling and UV unwrapping in Maya to low-poly optimization and layered PBR texturing in Substance 3D Painter, including custom MLI, plastic, aluminum, and thermal-blanket materials.",
-    tags: ["Maya", "Substance 3D Painter", "PBR texturing", "Mesh optimization"],
-    images: [
-      ["/assets/3d/09-mk1-render.webp", "Final rendered Blue Moon Mark 1 Lunar Lander"],
-      ["/assets/3d/09-mk1-mesh-1.webp", "Blue Moon Mark 1 Lunar Lander mesh overview"],
-      ["/assets/3d/09-mk1-mesh-2-1.webp", "Blue Moon Mark 1 Lunar Lander detailed mesh view one"],
-      ["/assets/3d/09-mk1-mesh-2-2.webp", "Blue Moon Mark 1 Lunar Lander detailed mesh view two"],
     ],
   },
 ];
@@ -184,7 +189,11 @@ const home = () => `
       </article>
       <div class="project-grid">
         <article class="project-card reveal">
-          ${projectCover("/assets/3d/01-lookdev-final.webp", "Final warmly lit Still-Life Look Development composition")}
+          ${projectTriptych([
+            ["/assets/3d/01-lookdev-final.webp", "Final warmly lit Still-Life Look Development composition"],
+            ["/assets/3d/01-lookdev-vdev.webp", "Still-Life material-development and rig-lighting stage"],
+            ["/assets/3d/01-lookdev-greyscale.webp", "Greyscale Still-Life scene"],
+          ], "Three images from the Still-Life Look Development project")}
           <div><p class="project-kicker">LOOK DEVELOPMENT · RENDERING & SHADING</p><h3>Still-Life Look Development</h3><p>A complete look-development study focused on materials, lighting, mesh optimization, and final presentation.</p><a class="text-link" href="/3d-generalist/#project-01">See project <span>→</span></a></div>
         </article>
         <article class="project-card reveal">
