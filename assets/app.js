@@ -102,7 +102,6 @@ const threeDProjects = [
     description: "Texturing for a Coffee Grinder created for a school assignment in a realistic art style.",
     tags: ["Substance 3D Painter", "Maya", "RenderMan", "Realistic"],
     images: [
-      ["/assets/3d/03-grinder-01.webp", "Vintage coffee grinder reference and rendered comparison"],
       ["/assets/3d/03-grinder-02.webp", "Vintage coffee grinder front three-quarter view"],
       ["/assets/3d/03-grinder-03.webp", "Vintage coffee grinder wood and metal detail"],
       ["/assets/3d/03-grinder-04.webp", "Vintage coffee grinder front view"],
