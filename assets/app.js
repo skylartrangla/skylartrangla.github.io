@@ -60,7 +60,7 @@ const threeDProjects = [
     title: "Still-Life Look Development",
     kicker: "LOOK DEVELOPMENT · RENDERING & SHADING",
     description: "Still-life look development created as the final project for the Rendering & Shading class taught by Caleb Kicklighter and Jeff Nichols from DreamWorks Animation. Models were provided by the instructors; I developed the materials, lighting, mesh optimization, and final presentation.",
-    tags: ["Substance 3D Painter", "Maya", "RenderMan", "Look development"],
+    tags: ["Maya", "Substance 3D Painter", "RenderMan", "Look development"],
     images: [
       ["/assets/3d/01-lookdev-final.webp", "Final warmly lit composition of the still-life scene"],
       ["/assets/3d/01-lookdev-vdev.webp", "Material-development and rig-lighting stage of the still-life scene"],
@@ -71,8 +71,8 @@ const threeDProjects = [
     number: "02",
     title: "Blue Moon Mark 1 Lunar Lander",
     kicker: "SPACE SIMULATION · HARD-SURFACE ASSET",
-    description: "Blue Moon Mark 1 Lunar Lander created for a NASA simulation application under the guidance of former NASA astronaut Dr. Gregory Chamitoff. I completed the asset's end-to-end 3D development—from high-poly modeling and UV unwrapping in Maya to low-poly optimization and layered PBR texturing in Substance 3D Painter, including custom MLI, plastic, aluminum, and thermal-blanket materials.",
-    tags: ["Maya", "Substance 3D Painter", "PBR texturing", "Mesh optimization"],
+    description: "Blue Moon Mark 1 Lunar Lander created for a NASA simulation application under the guidance of former NASA astronaut Dr. Gregory Chamitoff. I completed the asset's end-to-end 3D development: from high-poly modeling and UV unwrapping in Maya to low-poly optimization and layered PBR texturing in Substance 3D Painter.",
+    tags: ["Maya", "Substance 3D Painter", "Modeling", "Look Development"],
     images: [
       ["/assets/3d/09-mk1-render.webp", "Final rendered Blue Moon Mark 1 Lunar Lander"],
       ["/assets/3d/09-mk1-mesh-1.webp", "Blue Moon Mark 1 Lunar Lander mesh overview"],
@@ -85,7 +85,7 @@ const threeDProjects = [
     title: "Outdoor Messenger Bag",
     kicker: "REALISTIC TEXTURING · SCHOOL ASSIGNMENT",
     description: "Texturing for an Outdoor Messenger Bag created for a school assignment in a realistic art style.",
-    tags: ["Substance 3D Painter", "Maya", "RenderMan", "Realistic"],
+    tags: ["Maya", "Substance 3D Painter", "RenderMan", "Realistic"],
     images: [
       ["/assets/3d/02-messenger-01.webp", "Outdoor messenger bag front material detail"],
       ["/assets/3d/02-messenger-02.webp", "Outdoor messenger bag side pocket and hardware detail"],
@@ -100,7 +100,7 @@ const threeDProjects = [
     title: "Coffee Grinder",
     kicker: "REALISTIC TEXTURING · SCHOOL ASSIGNMENT",
     description: "Texturing for a Coffee Grinder created for a school assignment in a realistic art style.",
-    tags: ["Substance 3D Painter", "Maya", "RenderMan", "Realistic"],
+    tags: ["Maya", "Substance 3D Painter", "RenderMan", "Realistic"],
     images: [
       ["/assets/3d/03-grinder-02.webp", "Vintage coffee grinder front three-quarter view"],
       ["/assets/3d/03-grinder-03.webp", "Vintage coffee grinder wood and metal detail"],
@@ -354,7 +354,7 @@ const about = () => `
     </section>
     <section class="section about-layout">
       ${projectCover("/images/Portrait.JPG", "Portrait of Skylar La", "portrait-cover reveal")}
-      <div class="about-copy reveal"><p class="eyebrow">ABOUT</p><h2>I translate between<br><em>technical and visual worlds.</em></h2><p class="lead">My path through economics, multimedia, and visualization shaped a practice that combines analytical thinking with hands-on production.</p><p>I hold a Master of Science in Visualization from Texas A&M University, an Advanced Diploma in Multimedia Communications from Arena Multimedia, and a bachelor’s degree in International Economics from Foreign Trade University. My work experience spans research laboratories, AR production, and university teaching related to the 3D field.</p><p>I am particularly interested in digital twin and real-time visualization roles, followed by applied visualization research and focused 3D Generalist opportunities.</p></div>
+      <div class="about-copy reveal"><p class="eyebrow">ABOUT</p><h2>I translate between<br><em>technical and visual worlds.</em></h2><p class="lead">My path through economics, multimedia, and visualization shaped a practice that combines analytical thinking with hands-on production.</p><p>I hold a Master of Science in Visualization from Texas A&M University, an Advanced Diploma in Multimedia Communications from Arena Multimedia, and a bachelor’s degree in International Business Economics from Foreign Trade University. My work experience spans research laboratories, AR production, and university teaching related to the 3D field.</p><p>I am particularly interested in digital twin and real-time visualization roles, followed by applied visualization research and focused 3D Generalist opportunities.</p></div>
     </section>
     <section class="section resume-section">
       <div class="section-heading reveal"><p class="eyebrow">01 / EXPERIENCE</p><h2>Selected<br><em>experience.</em></h2></div>
@@ -372,7 +372,7 @@ const about = () => `
       <div class="education-grid">
         <article class="reveal"><span>2025</span><h3>MS · Visualization</h3><p>Texas A&M University · USA</p><small>GPR 3.86 · Distinguished Student Award</small></article>
         <article class="reveal"><span>2023</span><h3>Advanced Diploma · Multimedia Communications</h3><p>Arena Multimedia · Vietnam</p><small>Distinction</small></article>
-        <article class="reveal"><span>2023</span><h3>BA · International Economics</h3><p>Foreign Trade University · Vietnam</p><small>Distinction</small></article>
+        <article class="reveal"><span>2023</span><h3>BEcon · International Business Economics</h3><p>Foreign Trade University · Vietnam</p><small>Distinction</small></article>
         <article class="reveal"><span>2025</span><h3>IELTS Academic</h3><p>Overall 7.5 · CEFR C1</p><small>Listening 8.5 · Reading 8.5 · Writing 6.5 · Speaking 6.5<br>Tested 09 August 2025 · Full official report available upon request</small></article>
       </div>
       <div class="privacy-note reveal">
