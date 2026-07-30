@@ -76,8 +76,8 @@ const threeDProjects = [
     images: [
       ["/assets/3d/09-mk1-render.webp", "Final rendered Blue Moon Mark 1 Lunar Lander"],
       ["/assets/3d/09-mk1-mesh-1.webp", "Blue Moon Mark 1 Lunar Lander mesh overview"],
-      ["/assets/3d/09-mk1-mesh-2-1.webp", "Blue Moon Mark 1 Lunar Lander detailed mesh view one"],
-      ["/assets/3d/09-mk1-mesh-2-2.webp", "Blue Moon Mark 1 Lunar Lander detailed mesh view two"],
+      ["/assets/3d/09-mk1-mesh-2-2.webp", "Blue Moon Mark 1 Lunar Lander detailed mesh view one"],
+      ["/assets/3d/09-mk1-mesh-2-1.webp", "Blue Moon Mark 1 Lunar Lander detailed mesh view two"],
     ],
   },
   {
